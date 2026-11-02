@@ -323,7 +323,7 @@ article#g1>h3{color:var(--u1)}article#g2>h3{color:var(--u2)}article#g3>h3{color:
 .setcard .d{font-size:15px;color:var(--ink2)}
 .setcard .no{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font:700 15px var(--f-d);margin-bottom:2px}
 .setcard .pill{align-self:flex-start;margin-top:4px}
-.sc1{--sc:var(--u1)}.sc2{--sc:var(--u2)}.sc3{--sc:var(--u3)}
+.sc1{--sc:var(--u1)}.sc2{--sc:var(--u2)}.sc3{--sc:var(--u3)}.sc4{--sc:var(--u4)}
 .setcard .no{background:var(--sc)}
 .setcard[aria-pressed="true"]{border-color:var(--sc);background:color-mix(in srgb,var(--sc) 12%,var(--card))}
 .setcard:hover{border-color:var(--sc)}
@@ -344,7 +344,7 @@ html{color-scheme:light}</style>
 <div class="wrap">
 <header class="hero">
   <div class="hero-in">
-    <div class="kick">Global Success · Unit 1, 2, 3 · 2026 – 2027 · phiên bản 6</div>
+    <div class="kick">Global Success · Unit 1, 2, 3 · 2026 – 2027 · phiên bản 7</div>
     <h1>Ôn Tiếng Anh 8<br><mark>giữa học kì 1</mark></h1>
     <p>Nghe phát âm, học từ vựng, hiểu ngữ pháp từng bước, rồi làm toàn bộ đề trong đề cương. Máy chấm ngay và giảng lại từng câu.</p>
     <div class="stats"><span><b>38</b> câu</span><span><b>60</b> phút</span><span><b>3</b> Unit</span><span><b>10</b> điểm</span></div>
@@ -794,6 +794,156 @@ VOCAB.push({unit:'Từ gặp trong Đề cương 2 và 3',title:'Từ trong đ�
  ['buffalo','/ˈbʌfələʊ/','n','con trâu','We go herding the buffaloes.','Chúng mình đi chăn trâu.'],
 ]});
 
+/* ===== ĐỀ CƯƠNG NGUYỄN HỒNG ÁNH (từ file PDF scan) + đặt tên bộ Nguyễn Phú Hường ===== */
+SETS.push({id:'dc4',name:'Nguyễn Hồng Ánh',sub:'Review for Mid-term Test 1: 45 câu trắc nghiệm + đọc + viết',groups:[['A','A. Phonetics'],['B','B. Grammar & Vocabulary'],['C','C. Reading'],['D','D. Writing']]});
+
+const H_CLOZE="Nowadays, leisure activities are totally different from the past. Many people no longer enjoy [1] in outdoor activities after school. Instead, they [2] playing computer games or surfing the web in their free time. Some people rely too much on computers and the Internet. For example, they prefer sending [3] to having a face-to-face conversation with friends. Even when people hang [4] with their friends, they rarely talk, but they use their phones to surf the web; [5], many people dislike the Internet and the virtual world. They hate to waste time on the computer and enjoy other activities such as reading, shopping or playing sports.";
+const H_PASS_SOCIAL="One of the most obvious negative aspects of social networking is losing face-to-face contact with other people. Teens are sitting around with their phones in their hands all day long, tapping messages onto screens instead of communicating with real people. Many teenagers feel more comfortable with virtual friends than with real ones. The majority think that it is easier to chat on the Internet because they lack communication skills.<br><br>It is also true that parents often have no knowledge about what their kids do with their phones or computers. Crosby says that, \"While kids are plugged in to social media, only about 40% of parents are involved themselves.\" And because parents don't know the full picture, they also don't know how to deal with a teenager's potential overuse of social media and might not even be aware that a problem exists. Therefore, social networking can be much more immediately engaging with the teenager's life than parents are, and this fact makes virtual communication feel more \"real\" than face-to-face communication.";
+
+SECTIONS.push(
+{set:'dc4',id:'H1',group:'A',tab:'A. Phonetics',title:'A. Phonetics. I. Choose the word whose underlined part is pronounced differently from the others.',type:'mc',items:[
+ {q:"<b>1.</b> A. s<b class='u'>ure</b> &nbsp; B. cult<b class='u'>ure</b> &nbsp; C. nat<b class='u'>ure</b> &nbsp; D. leis<b class='u'>ure</b>",opts:['sure','culture','nature','leisure'],ans:0,say:'sure, culture, nature, leisure',exp:"Sure /ʃʊə/ đọc ure là /ʊə/. Culture, nature, leisure có đuôi -ure đọc là /ə/ (nhẹ). Từ khác biệt là sure."},
+ {q:"<b>2.</b> A. <b class='u'>oi</b>l &nbsp; B. v<b class='u'>oi</b>ce &nbsp; C. b<b class='u'>oi</b>l &nbsp; D. s<b class='u'>o</b>ft",opts:['oil','voice','boil','soft'],ans:3,say:'oil, voice, boil, soft',exp:"Oil, voice, boil đọc oi là /ɔɪ/. Soft /sɒft/ đọc o là /ɒ/ nên khác."},
+ {q:"<b>3.</b> A. f<b class='u'>i</b>nd &nbsp; B. l<b class='u'>i</b>ke &nbsp; C. w<b class='u'>i</b>n &nbsp; D. s<b class='u'>i</b>te",opts:['find','like','win','site'],ans:2,say:'find, like, win, site',exp:"Find, like, site đọc i là /aɪ/. Win /wɪn/ đọc i là /ɪ/ nên khác."},
+ {q:"<b>4.</b> A. gr<b class='u'>ou</b>p &nbsp; B. w<b class='u'>ou</b>ld &nbsp; C. m<b class='u'>o</b>ve &nbsp; D. sch<b class='u'>oo</b>l",opts:['group','would','move','school'],ans:1,say:'group, would, move, school',exp:"Group, move, school đọc là /uː/ (dài). Would /wʊd/ đọc ou là /ʊ/ (ngắn) nên khác."},
+ {q:"<b>5.</b> A. vill<b class='u'>age</b> &nbsp; B. past<b class='u'>a</b> &nbsp; C. cott<b class='u'>age</b> &nbsp; D. pass<b class='u'>age</b>",opts:['village','pasta','cottage','passage'],ans:1,say:'village, pasta, cottage, passage',exp:"Village, cottage, passage có đuôi -age đọc /ɪdʒ/. Pasta /ˈpæstə/ có a cuối đọc /ə/ nên khác."},
+]},
+{set:'dc4',id:'H2',group:'B',tab:'Q1–25',title:'B. Grammar & Vocabulary. II. Choose the best answer (Questions 1–25).',type:'mc',items:[
+ {q:"<b>1.</b> Does she fancy ______ a book to the younger children?",opts:['reads','reading','to read','read'],ans:1,exp:"Fancy + V-ing."},
+ {q:"<b>2.</b> Our class has a(n) ______, and we often post questions there to discuss.",opts:['office','forum','club','garden'],ans:1,exp:"Forum = diễn đàn, nơi đăng câu hỏi để thảo luận."},
+ {q:"<b>3.</b> Mai: Would you like to go to the cooking club with me this Sunday? Hoa: ______",opts:['No.','No, thanks.',"I'd love to. Thanks.",'Yes.'],ans:2,exp:"Đáp lại lời mời lịch sự: I'd love to. Thanks. (No hoặc Yes cộc lốc là bất lịch sự)."},
+ {q:"<b>4.</b> They detest ______ so early in the morning.",opts:['getting up','get up','to get up','gets up'],ans:0,exp:"Detest + V-ing: getting up."},
+ {q:"<b>5.</b> How much time do you spend ______ TV every day?",opts:['watch','to watch','watching','in watching'],ans:2,exp:"Spend time + V-ing: spend time watching TV."},
+ {q:"<b>6.</b> Steven dislikes ______, so he usually takes a bus to work.",opts:['drive','to be driven','be driven','driving'],ans:3,exp:"Dislike + V-ing: driving. (Đi xe buýt vì không thích lái xe.)"},
+ {q:"<b>7.</b> Jane prefers ______ an instrument to listening to music.",opts:['playing','play','to play','played'],ans:0,exp:"Cấu trúc prefer V-ing to V-ing: prefers playing ... to listening ..."},
+ {q:"<b>8.</b> My grandparents love ______ very much. There are a lot of beautiful flowers and fresh vegetables in their garden.",opts:['doing garden','doing gardening','do gardening','to do garden'],ans:1,exp:"Do gardening = làm vườn. Love + V-ing: doing gardening."},
+ {q:"<b>9.</b> She loves making ______, such as pottery and carving wood.",opts:['crafts','origami','stamps','bracelets'],ans:0,exp:"Pottery (đồ gốm) và carving wood (khắc gỗ) là các ví dụ của crafts (đồ thủ công)."},
+ {q:"<b>10.</b> Melinda ______ hanging out because she is a sociable person.",opts:['detests','hates','dislikes','fancies'],ans:3,exp:"Người hòa đồng (sociable) thì thích đi chơi: fancies hanging out. Ba từ còn lại có nghĩa ghét."},
+ {q:"<b>11.</b> Our kids are interested ______ playing with pets when they have free time.",opts:['on','in','of','about'],ans:1,exp:"Be interested in + V-ing."},
+ {q:"<b>12.</b> Samuel is sociable, so he can ______ friends at school.",opts:['make','take','do','work'],ans:0,exp:"Make friends = kết bạn."},
+ {q:"<b>13.</b> We have ______ from our exams, peers and parents. This makes us feel very stressed.",opts:['interests','pressure','friends','forum'],ans:1,exp:"Have pressure from ... = chịu áp lực từ ... (nên cảm thấy căng thẳng)."},
+ {q:"<b>14.</b> Jenifer is keen ______ doing DIY.",opts:['with','of','on','to'],ans:2,exp:"Be keen on + V-ing."},
+ {q:"<b>15.</b> Ba did the puzzles ______ than I did, so I won the competition.",opts:['more slowly','slowly','slower','more slower'],ans:0,exp:"Tôi thắng nên Ba làm chậm hơn. Slowly là trạng từ dài: more slowly than."},
+ {q:"<b>16.</b> People in my village are really ______. They are always generous and friendly to visitors.",opts:['well-trained','funny','hospitable','unsociable'],ans:2,exp:"Hospitable = hiếu khách (hào phóng, thân thiện với khách)."},
+ {q:"<b>17.</b> The development of cities destroys ______ areas of countryside.",opts:['vast','much','less','stretching'],ans:0,exp:"Vast areas = những vùng rộng lớn. Areas là danh từ đếm được số nhiều nên không dùng much."},
+ {q:"<b>18.</b> People in the countryside live ______ than those in the city.",opts:['happy','more happily','happily','happier'],ans:1,exp:"Sau live cần trạng từ, có than nên so sánh hơn: more happily."},
+ {q:"<b>19.</b> Posting personal pictures on social media is fun; ______, sometimes it can bring many problems.",opts:['although','or','so','however'],ans:3,exp:"Sau dấu chấm phẩy dùng however (tuy nhiên), có dấu phẩy phía sau."},
+ {q:"<b>20.</b> Minh is not fond of ______ puzzles because he thinks it takes a lot of time.",opts:['making','doing','collecting','building'],ans:1,exp:"Cụm quen thuộc: do puzzles = giải câu đố, xếp hình."},
+ {q:"<b>21.</b> ______ field is a field planted with rice growing in water.",opts:['Paddy','Grass','Pasture','Wheat'],ans:0,exp:"Paddy field = ruộng lúa nước."},
+ {q:"<b>22.</b> After harvesting rice, the farmers often ______ it in the sunlight.",opts:['collect','water','dry','pick'],ans:2,exp:"Dry rice in the sunlight = phơi lúa dưới nắng."},
+ {q:"<b>23.</b> Nam ______ the Internet a lot to find useful information for his studying.",opts:['surfs','types','checks','looks after'],ans:0,exp:"Surf the Internet = lướt web. Chủ ngữ Nam số ít nên surfs."},
+ {q:"<b>24.</b> Nick can jump ______ than Tom.",opts:['more high','higher than','higher','more higher'],ans:2,exp:"High là trạng từ ngắn nên higher. Than đã có sẵn trong câu nên không chọn higher than."},
+ {q:"<b>25.</b> The farmers started harvesting their crops ______ than they expected.",opts:['earlier','more earlier','early','earlier than'],ans:0,exp:"Early → earlier (đổi y thành i). Đã có than sẵn nên chọn earlier."},
+]},
+{set:'dc4',id:'H3',group:'B',tab:'Q26–45',title:'B. Grammar & Vocabulary. II. Choose the best answer (Questions 26–45).',type:'mc',items:[
+ {q:"<b>26.</b> Quang helps his parents ______ the rice onto the ox-drawn cart.",opts:['load','collect','dry','ride'],ans:0,exp:"Load the rice onto the cart = chất lúa lên xe (cụm load ... onto ...)."},
+ {q:"<b>27.</b> Look! Some boys are ______ the buffaloes.",opts:['picking','playing','driving','herding'],ans:3,exp:"Herd the buffaloes = chăn trâu."},
+ {q:"<b>28.</b> My sister plays the piano ______ than me.",opts:['gooder','weller','better','more good'],ans:2,exp:"Well → better (bất quy tắc)."},
+ {q:"<b>29.</b> Adding fertilizer to the soil will help the plants to grow ______.",opts:['more quick','quicklier','more quickly','quickly more'],ans:2,exp:"Bổ nghĩa cho động từ grow cần trạng từ; so sánh với dạng dài: more quickly."},
+ {q:"<b>30.</b> Would you like to drink a cup of tea ______ coffee?",opts:['and','or','although','but'],ans:1,exp:"Hỏi lựa chọn giữa hai thứ: or."},
+ {q:"<b>31.</b> My sister plays volleyball well, ______ I do not.",opts:['and','but','or','although'],ans:1,exp:"Chị chơi giỏi nhưng tôi không: hai ý đối lập → but."},
+ {q:"<b>32.</b> – Nga: What a nice shirt you have, Mai! – Mai: \"______\"",opts:["Yes, I'd like",'No, I don\'t like','Thank you, Nga','Never mind'],ans:2,exp:"Được khen thì cảm ơn: Thank you, Nga."},
+ {q:"<b>33.</b> Most people like watching comedies ______ they're very interesting.",opts:['for','so','or','but'],ans:0,exp:"For (đứng sau dấu phẩy hoặc giữa câu) chỉ lí do, nghĩa là vì/bởi vì: ...comedies for they're very interesting."},
+ {q:"<b>34.</b> I have to go out, ______ I meet my pen pal today.",opts:['but','so','for','or'],ans:2,exp:"Ra ngoài vì hôm nay gặp bạn qua thư: ý sau là lí do → for."},
+ {q:"<b>35.</b> We decide to stay at home, ______ it's raining heavily.",opts:['and','so','for','but'],ans:2,exp:"Mưa to là lí do ở nhà → for (vì)."},
+ {q:"<b>36.</b> Antony drives ______ his brother.",opts:['more careful than','more carefully','more carefully than','as careful as'],ans:2,exp:"Drives cần trạng từ, có his brother nên so sánh hơn: more carefully than."},
+ {q:"<b>37.</b> I was tired, ______ I went to bed early.",opts:['and','or','but','so'],ans:3,exp:"Mệt là nguyên nhân, đi ngủ sớm là kết quả → so."},
+ {q:"<b>38.</b> I tried to call her, ______ she didn't answer.",opts:['and','or','but','so'],ans:2,exp:"Gọi nhưng cô ấy không nghe: đối lập → but."},
+ {q:"<b>39.</b> You can go to the city centre by bus ______ by train.",opts:['because','or','and','either'],ans:1,exp:"Hai phương tiện để chọn: or."},
+ {q:"<b>40.</b> She can sing well, ______ she can't dance.",opts:['and','or','but','therefore'],ans:2,exp:"Hát hay nhưng không biết nhảy → but."},
+ {q:"<b>41.</b> I forgot to bring the map, ______ I got lost.",opts:['or','however','but','so'],ans:3,exp:"Quên bản đồ nên bị lạc: kết quả → so. (However không đứng sau dấu phẩy.)"},
+ {q:"<b>42.</b> You should drive carefully, ______ you may cause an accident.",opts:['however','but','otherwise','therefore'],ans:2,exp:"Phải lái xe cẩn thận, nếu không thì có thể gây tai nạn → otherwise."},
+ {q:"<b>43.</b> It was dark in the room, ______ I switched on the light.",opts:['so','but','for','or'],ans:0,exp:"Phòng tối nên tôi bật đèn: kết quả → so."},
+ {q:"<b>44.</b> My son was crazy ______ football when he was young.",opts:['about','of','at','with'],ans:0,exp:"Be crazy about."},
+ {q:"<b>45.</b> Ann is very sensitive; ______, you shouldn't comment on her new shoes.",opts:['but','therefore','however','so'],ans:1,exp:"Sau dấu chấm phẩy dùng therefore (vì vậy) kèm dấu phẩy. So và but không đứng sau dấu chấm phẩy kiểu này."},
+]},
+{set:'dc4',id:'H4',group:'B',tab:'III. Tìm lỗi sai',title:'III. Identify ONE mistake in each of the sentences below.',type:'mc',items:[
+ {q:"<b>1.</b> I <u>prefer</u> <u>to visiting</u> my <u>grandparents</u> <u>this summer</u>.",opts:['prefer','to visiting','grandparents','this summer'],ans:1,exp:"Sau prefer dùng V-ing hoặc to V, không thể to + V-ing. Sửa: to visiting → visiting (hoặc to visit)."},
+ {q:"<b>2.</b> Mai <u>is</u> <u>fond of</u> <u>making</u> crafts <u>at</u> her free time.",opts:['is','fond of','making','at'],ans:3,exp:"Cụm đúng: in her free time. Sửa: at → in."},
+ {q:"<b>3.</b> Nam <u>speaks</u> English <u>more good</u> <u>than</u> <u>his</u> brother.",opts:['speaks','more good','than','his'],ans:1,exp:"Trạng từ của good là well, so sánh hơn là better. Sửa: more good → better."},
+ {q:"<b>4.</b> <u>Although</u> she likes <u>watching</u> TV, <u>but</u> she <u>doesn't have</u> much free time.",opts:['Although','watching','but','doesn\'t have'],ans:2,exp:"Không dùng although và but trong cùng một câu. Bỏ but."},
+ {q:"<b>5.</b> Schoolwork <u>causes</u> teens a lot <u>pressure</u>, <u>but</u> they are also under pressure <u>from</u> their parents.",opts:['causes','pressure','but','from'],ans:1,exp:"Cụm đúng: a lot of pressure. Câu thiếu of. Sửa: a lot pressure → a lot of pressure. (Chỗ gạch chân là pressure.)"},
+]},
+{set:'dc4',id:'H5',group:'B',tab:'IV. Word form',title:'IV. Fill each blank with the correct form of the word in brackets.',type:'fill',items:[
+ {q:"1. Most students detest ___ (have) homework during the weekends.",ans:[["having"]],exp:"Detest + V-ing: having."},
+ {q:"2. Alice is fond of ___ (create) small animals with paper.",ans:[["creating"]],exp:"Be fond of + V-ing. Create bỏ e rồi thêm ing: creating."},
+ {q:"3. Chi is intelligent, but she needs to study ___ (hard) than she did in her first semester to pass the examination.",ans:[["harder"]],exp:"Hard là trạng từ ngắn, có than nên so sánh hơn: harder."},
+ {q:"4. These students are learning how ___ (deal) with pressure before the final test.",ans:[["to deal"]],exp:"Sau how (từ để hỏi) dùng to V: how to deal with."},
+ {q:"5. Tom reads ___ (fast) than his brother.",ans:[["faster"]],exp:"Fast là trạng từ ngắn: faster than."},
+ {q:"6. Mai detests ___ (surf) the net because she thinks it takes a lot of time.",ans:[["surfing"]],exp:"Detest + V-ing: surfing."},
+ {q:"7. Nick enjoys ___ (listen) to the melodies of Vietnamese folk songs.",ans:[["listening"]],exp:"Enjoy + V-ing: listening."},
+ {q:"8. My sister draws ___ (good) than I do.",ans:[["better"]],exp:"Draws cần trạng từ; good → well → better."},
+ {q:"9. Do you like taking photos or ___ (watch) TV?",ans:[["watching"]],exp:"Hai việc nối bằng or phải cùng dạng: taking ... or watching."},
+]},
+{set:'dc4',id:'H6',group:'C',tab:'V. Cloze',title:'V. Read the following passage and choose the correct word for each gap.',type:'clozemc',passage:H_CLOZE,items:[
+ {n:1,opts:['participate','to participate','participating','participates'],ans:2,exp:"Enjoy + V-ing: participating in outdoor activities."},
+ {n:2,opts:['fancy','detest','dislike','hate'],ans:0,exp:"\"Instead, they ___ playing computer games\": thay vì đi ngoài trời thì họ thích chơi game → fancy. Ba từ còn lại có nghĩa ghét."},
+ {n:3,opts:['forums','messages','websites','pictures'],ans:1,exp:"Thay vì nói chuyện trực tiếp, họ thích gửi tin nhắn: sending messages."},
+ {n:4,opts:['to','in','on','out'],ans:3,exp:"Hang out with friends = đi chơi với bạn bè."},
+ {n:5,opts:['However','Therefore','And','Or'],ans:0,exp:"Vế trước nói nhiều người dựa vào Internet, vế sau nói nhiều người không thích Internet: đối lập → However."},
+]},
+{set:'dc4',id:'H7',group:'C',tab:'VI. Làng quê',title:'VI. Read the following passage and choose the best answers.',type:'reading',passage:R_PASS_VILLAGE,items:[
+ {kind:'mc',q:"<b>1.</b> Where does the writer come from?",opts:['a big city','a small village','a countryside','a small town'],ans:1,exp:"Bài viết: \"I come from a small village\"."},
+ {kind:'mc',q:"<b>2.</b> One reason why he prefers village life is that ______.",opts:["it's very noisy",'the air is so fresh and clean','life is more exciting there','city life is healthier'],ans:1,exp:"Bài viết: \"Another reason is that the air is so fresh and clean.\""},
+ {kind:'mc',q:"<b>3.</b> What does he think about the people in his village?",opts:['friendlier','boring','exciting','kind'],ans:0,exp:"Bài viết: \"I think the people here are friendlier.\""},
+ {kind:'mc',q:"<b>4.</b> According to the writer, what is the disadvantage of living in the village?",opts:['weather','food','transport','service'],ans:2,exp:"Bài viết: \"The only downside is transport.\""},
+ {kind:'mc',q:"<b>5.</b> How does he go to school?",opts:['bicycle','train','moped','school bus'],ans:3,exp:"Bài viết: \"the school bus is always stopping to pick up more people\". Cậu ấy mới đang học lái xe máy (moped) nên hiện chưa đi bằng xe máy."},
+]},
+{set:'dc4',id:'H8',group:'C',tab:'VII. Mạng xã hội',title:'VII. Read the following passage and choose the best answers.',type:'reading',passage:H_PASS_SOCIAL,items:[
+ {kind:'mc',q:"<b>1.</b> What is the main idea of the passage?",opts:['Parents should use social networks more to understand their children.','Students are using social networks too much.',"Social networking brings negative effects to student's face-to-face communication.",'Virtual life is easier than real life.'],ans:2,exp:"Câu đầu bài: mặt tiêu cực của mạng xã hội là mất giao tiếp trực tiếp. Cả bài nói về tác hại này."},
+ {kind:'mc',q:"<b>2.</b> What do most teenagers think about chatting on the Internet?",opts:['Chatting on the Internet is easier than talking with real people.','Chatting on the Internet is more difficult than talking with real people.','Chatting on the Internet is funnier than talking with real people.','Chatting on the Internet is more boring than talking with real people.'],ans:0,exp:"Bài viết: \"The majority think that it is easier to chat on the Internet\"."},
+ {kind:'mc',q:"<b>3.</b> The percentage of 40% refers to:",opts:['The number of parents who let their children use social media.','The number of parents who do not want their children to use media.','The number of parents who use social media.','The number of parents who do not use social media.'],ans:2,exp:"Câu trích: \"only about 40% of parents are involved themselves\" (chỉ khoảng 40% phụ huynh tự tham gia mạng xã hội) → số phụ huynh dùng mạng xã hội."},
+ {kind:'mc',q:"<b>4.</b> Which sentence is NOT TRUE according to the passage?",opts:['The majority of teenagers find it easier to communicate with virtual friends','The majority of teenagers lack communication skills.','The majority of parents know how to use social media with their children','The majority of parents do not know how to deal with their children\'s overuse of social media.'],ans:2,exp:"Bài viết nói phụ huynh không biết cách xử lí việc con dùng mạng xã hội quá mức. Câu C (phần lớn phụ huynh biết cách dùng) trái với bài nên là câu KHÔNG ĐÚNG."},
+ {kind:'mc',q:"<b>5.</b> Which of the following best explains the word \"overuse\" in the passage?",opts:['using something overnight','using something too much','using something without thinking','using something with carelessness'],ans:1,exp:"Over- = quá mức; overuse = sử dụng quá nhiều (using something too much)."},
+]},
+{set:'dc4',id:'H9',group:'D',tab:'VIII. Dạng 1, 2',title:'VIII. Do as directed. Dạng 1: Write a complete sentence from the given cues. Dạng 2: Make a question for the underlined word.',type:'text',items:[
+ {q:"1. My son / crazy / play / computer / games.",accept:["My son is crazy about playing computer games","My son was crazy about playing computer games"],model:"My son is crazy about playing computer games.",exp:"Be crazy about + V-ing. Chủ ngữ My son (số ít) → is. Thêm giới từ about."},
+ {q:"2. I / prefer / hang / out / friends / play / board / games.",accept:["I prefer hanging out with {|my }friends {to|and} playing board games"],model:"I prefer hanging out with friends to playing board games.",exp:"Prefer + V-ing to V-ing (thích ... hơn ...). Hang out with friends → hanging out with friends; play → playing. (Nối bằng and cũng được.)"},
+ {q:"3. I use <u>Facebook</u> every day. (đặt câu hỏi cho từ gạch chân: Facebook)",accept:["What do you use every day"],model:"What do you use every day?",exp:"Hỏi về đồ vật: What + do + you + use ... ? Chủ ngữ I đổi thành you khi hỏi."},
+ {q:"4. She uses Facebook <u>to connect with friends</u>. (đặt câu hỏi cho phần gạch chân)",accept:["Why does she use Facebook","What does she use Facebook for"],model:"Why does she use Facebook?",exp:"Phần gạch chân chỉ mục đích → hỏi bằng Why. Chủ ngữ She (số ít) → does she use."},
+]},
+{set:'dc4',id:'H10',group:'D',tab:'Dạng 3: Viết lại',title:'Dạng 3: Rewrite (Questions 5–14).',type:'text',items:[
+ {q:"5. Mary can't play tennis as well as Jack. (BETTER)",prefix:"Jack can",accept:["play tennis better than Mary","play tennis better than Mary does"],model:"Jack can play tennis better than Mary.",exp:"A not as well as B = B better than A. Can + V nguyên mẫu: Jack can play tennis better than Mary."},
+ {q:"6. A camel runs more slowly than a horse. (FASTER)",prefix:"A horse",accept:["runs faster than a camel","runs faster than a camel does"],model:"A horse runs faster than a camel.",exp:"Đảo hai đối tượng và đổi more slowly thành faster."},
+ {q:"7. Your bike runs faster than mine. (SLOWLY)",prefix:"My bike",accept:["runs more slowly than yours","runs more slowly than your bike","runs slower than yours"],model:"My bike runs more slowly than yours.",exp:"Đảo hai đối tượng (my bike, yours) và đổi faster thành more slowly."},
+ {q:"8. My alarm didn't go off this morning. I was late. (THEREFORE)",accept:["My alarm didn't go off this morning therefore I was late"],punct:/[;.]\s*therefore\s*,?/i,model:"My alarm didn't go off this morning; therefore, I was late.",exp:"Therefore (vì vậy) chỉ kết quả. Viết: ...; therefore, ..."},
+ {q:"9. Many people in my company think he is a good man. I think he is a really cruel one. (HOWEVER)",accept:["Many people in my company think he is a good man however I think he is a really cruel one"],punct:/[;.]\s*however\s*,?/i,model:"Many people in my company think he is a good man; however, I think he is a really cruel one.",exp:"However (tuy nhiên) chỉ đối lập. Viết: ...; however, ..."},
+ {q:"10. We came to the party; however, the guests had gone home. (BUT)",accept:["We came to the party but the guests had gone home"],needComma:true,model:"We came to the party, but the guests had gone home.",exp:"however = but. Bỏ dấu chấm phẩy, dùng dấu phẩy trước but."},
+ {q:"11. We can prepare a big meal for dinner. We can eat out in a French restaurant. (OR)",accept:["We can prepare a big meal for dinner or we can eat out in a French restaurant"],accept2:["We can prepare a big meal for dinner or eat out in a French restaurant"],needComma:true,model:"We can prepare a big meal for dinner, or we can eat out in a French restaurant.",exp:"Hai lựa chọn → or, có dấu phẩy trước or khi nối hai mệnh đề đầy đủ."},
+ {q:"12. You must wear a helmet when driving a motorbike. You will be fined. (OTHERWISE)",accept:["You must wear a helmet when driving a motorbike otherwise you will be fined"],punct:/[;.]\s*otherwise\s*,?/i,model:"You must wear a helmet when driving a motorbike; otherwise, you will be fined.",exp:"Otherwise = nếu không thì. Viết: ...; otherwise, ..."},
+ {q:"13. I am into making crafts in my free time. (INTERESTED)",accept:["I am interested in making crafts in my free time","I'm interested in making crafts in my free time"],model:"I am interested in making crafts in my free time.",exp:"be into + V-ing = be interested in + V-ing."},
+ {q:"14. My brother prefers to go for a walk after dinner. (FANCIES)",prefix:"My brother fancies",accept:["going for a walk after dinner"],model:"My brother fancies going for a walk after dinner.",exp:"Fancy + V-ing: go → going."},
+]},
+{set:'dc4',id:'H11',group:'D',tab:'Dạng 4: Sắp xếp',title:'Dạng 4: Reorder the words to make a correct sentence.',type:'order',items:[
+ {q:"15.",words:['more','than','carefully','drives','David','John','.'],accept:["David drives more carefully than John.","John drives more carefully than David."],model:"David drives more carefully than John.",exp:"S + V + more + trạng từ + than + người so sánh. Cả hai cách (David hơn John hoặc John hơn David) đều đúng ngữ pháp."},
+ {q:"16.",words:['English','better','speaks','sister','than','My','I','do','.'],accept:["My sister speaks English better than I do."],model:"My sister speaks English better than I do.",exp:"My sister (chủ ngữ) + speaks + English + better than + I do."},
+]},
+{set:'dc4',id:'H12',group:'D',tab:'IV. Writing topics',title:'IV. Writing topics (80–100 words).',type:'open',items:[
+ {q:"1. Write an email (80 - 100 words) to a penfriend to tell him / her about what you usually do with your friends in your free time.",words:[80,100],check:/friend/i,hint:"Viết email 80–100 từ: chào (Dear ...), hỏi thăm, kể 3–4 hoạt động hay làm cùng bạn (dùng enjoy / love + V-ing, and, but, so), lí do thích, hỏi lại bạn, chào kết (Best wishes).",sample:["Dear Linh, How are you? I am writing to tell you about what I usually do with my friends in my free time. We often meet at the community centre on Saturday afternoons. First, we play board games and chat about school. Then we sometimes make origami or do DIY projects together. I really enjoy these activities because they help me relax after a busy week. If the weather is nice, we go cycling around the lake. What do you usually do with your friends? Please write back soon. Best wishes, Mai"],exp:"Bài mẫu có đủ: lời chào, hoạt động chính, hoạt động phụ, lí do thích, câu hỏi lại và lời kết."},
+ {q:"2. Write a paragraph (80 - 100 words) about what you like or dislike about life in the countryside.",words:[80,100],check:/countryside|village/i,hint:"Viết 80–100 từ: điều em thích (không khí, yên tĩnh, con người) và điều em không thích (ít cửa hàng, ít chỗ giải trí). Dùng like / love / dislike + V-ing, but, however, so.",sample:["I like the countryside because it is peaceful and beautiful. The air is fresh, and the people are friendly and hospitable. In my free time, I enjoy flying kites in the open fields and herding the buffaloes with my friends. I also love picking fruit in the orchard. However, I dislike living far from the city because there are fewer shops and services, and entertainment is difficult to find in the evening. Moreover, it takes a long time to travel to school. On the whole, I think life in the countryside is healthy and relaxing."],exp:"Bài mẫu chia hai phần rõ: điều thích (yên bình, không khí, con người, hoạt động) và điều không thích (ít dịch vụ, giải trí, đi lại)."},
+ {q:"3. Write a paragraph (80 - 100 words) about the cause(s) of your stress and offer solutions.",words:[80,100],check:/stress|pressure|stressed/i,hint:"Viết 80–100 từ: nguyên nhân gây căng thẳng (bài vở, thi cử, bố mẹ, bạn bè, mạng xã hội) và giải pháp (tập thể dục, nói chuyện với bạn, nghe nhạc, quản lí thời gian, ngủ đủ giấc).",sample:["Sometimes I feel stressed because I have too much schoolwork and many tests. My parents also expect me to get good marks, so I feel a lot of pressure. Fortunately, I have some ways to reduce stress. First, I do exercise such as cycling or playing badminton after school. Second, I talk to my friends or listen to music because it helps me relax. Moreover, I make a list of tasks and do the most important ones first. Finally, I try to sleep at least seven hours a night. These solutions make me feel better and more confident."],exp:"Bài mẫu có: nguyên nhân (bài vở, áp lực từ bố mẹ), giải pháp (thể dục, nói chuyện, nghe nhạc, quản lí thời gian, ngủ đủ) và kết luận."},
+]},
+);
+
+VOCAB.push({unit:'Từ gặp trong đề Nguyễn Hồng Ánh',title:'Từ thêm trong đề Review Mid-term Test 1',items:[
+ ['peer','/pɪə/','n','bạn cùng trang lứa','We have pressure from our peers.','Chúng mình chịu áp lực từ bạn bè đồng trang lứa.'],
+ ['fertilizer','/ˈfɜːtəlaɪzə/','n','phân bón','Fertilizer helps the plants grow quickly.','Phân bón giúp cây lớn nhanh.'],
+ ['ox-drawn cart','/ˈɒks drɔːn kɑːt/','n','xe bò kéo','They load the rice onto the ox-drawn cart.','Họ chất lúa lên xe bò kéo.'],
+ ['pen pal / penfriend','/ˈpen pæl/','n','bạn qua thư','I meet my pen pal today.','Hôm nay mình gặp bạn qua thư.','pen pal'],
+ ['cruel','/ˈkruːəl/','adj','độc ác, tàn nhẫn','Some people think he is cruel.','Một số người nghĩ anh ta tàn nhẫn.'],
+ ['helmet','/ˈhelmɪt/','n','mũ bảo hiểm','You must wear a helmet.','Bạn phải đội mũ bảo hiểm.'],
+ ['fine (v)','/faɪn/','v','phạt tiền','You will be fined.','Bạn sẽ bị phạt.','fine'],
+ ['melody','/ˈmelədi/','n','giai điệu','I enjoy listening to folk melodies.','Mình thích nghe các giai điệu dân ca.'],
+ ['overuse','/ˌəʊvəˈjuːs/','n / v','sử dụng quá mức','Overuse of social media is harmful.','Lạm dụng mạng xã hội là có hại.'],
+ ['be involved','/bi ɪnˈvɒlvd/','phr','tham gia, có liên quan','Only 40% of parents are involved.','Chỉ khoảng 40% phụ huynh có tham gia.'],
+ ['face-to-face','/ˌfeɪs tə ˈfeɪs/','adj','trực tiếp, gặp mặt','I prefer face-to-face conversation.','Mình thích nói chuyện trực tiếp hơn.'],
+ ['virtual','/ˈvɜːtʃuəl/','adj','ảo, trên mạng','Some teens prefer virtual friends.','Một số bạn trẻ thích bạn trên mạng hơn.'],
+ ['rely on','/rɪˈlaɪ ɒn/','phr v','dựa vào, phụ thuộc vào','Some people rely too much on computers.','Một số người quá phụ thuộc vào máy tính.'],
+ ['do gardening','/duː ˈɡɑːdnɪŋ/','phr','làm vườn','My grandparents love doing gardening.','Ông bà mình rất thích làm vườn.'],
+ ['do puzzles','/duː ˈpʌzlz/','phr','giải câu đố, xếp hình','Minh is not fond of doing puzzles.','Minh không thích giải câu đố.'],
+ ['pottery','/ˈpɒtəri/','n','đồ gốm','She loves making pottery.','Cô ấy thích làm đồ gốm.'],
+]});
+
 /* ===== HELPERS ===== */
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -865,6 +1015,7 @@ $('#p-cautruc').innerHTML=`
  <button class="step" data-goset="dc1"><span class="no">1</span><b>Đề cương 1</b><span class="d">Đề cương ôn tập + Practice test (14 phần)</span></button>
  <button class="step" data-goset="dc2"><span class="no">2</span><b>Đề cương 2</b><span class="d">Revision: 48 câu + 2 đoạn văn</span></button>
  <button class="step" data-goset="dc3"><span class="no">3</span><b>Đề cương 3</b><span class="d">Đề số 01: 40 câu, 60 phút, 10 điểm</span></button>
+ <button class="step" data-goset="dc4"><span class="no">4</span><b>Đề cương Nguyễn Hồng Ánh</b><span class="d">45 câu trắc nghiệm + đọc + viết</span></button>
 </div>
 <h2 style="margin-top:26px">Cấu trúc đề kiểm tra (Đề cương 1)</h2>
 <p class="lead">Unit 1, 2, 3 · Thời gian làm bài: 60 phút · 38 câu · 10 điểm.</p>
