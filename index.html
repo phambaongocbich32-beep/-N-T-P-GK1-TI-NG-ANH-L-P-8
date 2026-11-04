@@ -12,7 +12,7 @@
   --accent:#0b7a6e; --accent-ink:#ffffff; --accent-soft:#dff3ef;
   --hi:#ffe27a; --info:#e8f0ff; --info-line:#b9cdf5;
   --ok:#1a7f45; --ok-bg:#e0f5e8; --bad:#c2352b; --bad-bg:#fde8e6; --near:#9a6400; --near-bg:#fff1cf;
-  --warn-bg:#fff6d6; --u1:#2f6fed;--u1s:#e3ecff;--u2:#1b9a60;--u2s:#dcf4e8;--u3:#8a56e8;--u3s:#eee5ff;--u4:#d9770a;--u4s:#ffecd2;--hero-a:#0e2a47;--hero-b:#0b6f66; --shadow:0 1px 2px rgba(20,36,59,.06),0 4px 14px rgba(20,36,59,.05);
+  --warn-bg:#fff6d6; --u1:#2f6fed;--u1s:#e3ecff;--u2:#1b9a60;--u2s:#dcf4e8;--u3:#8a56e8;--u3s:#eee5ff;--u4:#d9770a;--u4s:#ffecd2;--u5:#d6336c;--u5s:#ffe3ec;--hero-a:#0e2a47;--hero-b:#0b6f66; --shadow:0 1px 2px rgba(20,36,59,.06),0 4px 14px rgba(20,36,59,.05);
   --f-d:"Baloo 2","Be Vietnam Pro",system-ui,sans-serif;
   --f-b:"Be Vietnam Pro","Segoe UI",system-ui,sans-serif;
   --f-i:"Noto Sans","Segoe UI","Arial Unicode MS",sans-serif;
@@ -22,13 +22,13 @@
   --accent:#4fd1b8; --accent-ink:#06211c; --accent-soft:#12372f;
   --hi:#6b5a10; --info:#172a4a; --info-line:#2f4a7d;
   --ok:#5ed38d; --ok-bg:#12331f; --bad:#ff8a80; --bad-bg:#3b1a18; --near:#f4c15d; --near-bg:#3a2d0c;
-  --warn-bg:#3a3010; --u1:#7aa5ff;--u1s:#1a2d57;--u2:#52d493;--u2s:#133626;--u3:#b69bff;--u3s:#2c2352;--u4:#f5a949;--u4s:#3d2a0e;--hero-a:#0a1d33;--hero-b:#0a4f49; --shadow:none; color-scheme:dark}}
+  --warn-bg:#3a3010; --u1:#7aa5ff;--u1s:#1a2d57;--u2:#52d493;--u2s:#133626;--u3:#b69bff;--u3s:#2c2352;--u4:#f5a949;--u4s:#3d2a0e;--u5:#ff7aa8;--u5s:#4a1830;--hero-a:#0a1d33;--hero-b:#0a4f49; --shadow:none; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0d1626; --card:#16233a; --ink:#e7edf8; --ink2:#a5b3c9; --line:#2a3a56;
   --accent:#4fd1b8; --accent-ink:#06211c; --accent-soft:#12372f;
   --hi:#6b5a10; --info:#172a4a; --info-line:#2f4a7d;
   --ok:#5ed38d; --ok-bg:#12331f; --bad:#ff8a80; --bad-bg:#3b1a18; --near:#f4c15d; --near-bg:#3a2d0c;
-  --warn-bg:#3a3010; --u1:#7aa5ff;--u1s:#1a2d57;--u2:#52d493;--u2s:#133626;--u3:#b69bff;--u3s:#2c2352;--u4:#f5a949;--u4s:#3d2a0e;--hero-a:#0a1d33;--hero-b:#0a4f49; --shadow:none; color-scheme:dark}
+  --warn-bg:#3a3010; --u1:#7aa5ff;--u1s:#1a2d57;--u2:#52d493;--u2s:#133626;--u3:#b69bff;--u3s:#2c2352;--u4:#f5a949;--u4s:#3d2a0e;--u5:#ff7aa8;--u5s:#4a1830;--hero-a:#0a1d33;--hero-b:#0a4f49; --shadow:none; color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{position:relative;background:var(--bg);color:var(--ink);font-family:var(--f-b);font-size:16px;line-height:1.65;margin:0;
@@ -176,7 +176,7 @@ nav.tabs button:hover:not([aria-selected="true"]){background:var(--accent-soft);
   .hero .kick{padding-right:46px}
   .hero p{display:none}.hero-in{padding:22px 18px 18px}.hero h1{font-size:34px;margin-bottom:10px}
   nav.tabs{position:fixed;top:auto;bottom:0;left:0;right:0;margin:0;padding:0 max(6px,env(safe-area-inset-left,0px)) env(safe-area-inset-bottom,0px);border-top:1px solid var(--line);border-bottom:0}
-  nav.tabs .in{display:grid;grid-template-columns:repeat(6,1fr);gap:2px;padding:6px 0;overflow:visible}
+  nav.tabs .in{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;padding:6px 0;overflow:visible}
   nav.tabs button{flex-direction:column;gap:2px;padding:6px 2px;font-size:11px;border-radius:10px;white-space:normal;text-align:center;line-height:1.15}
   nav.tabs button svg{width:22px;height:22px}
   header.hero{border-radius:18px}
@@ -192,7 +192,7 @@ h2{font-size:clamp(26px,5vw,34px);margin-bottom:4px}
 .step .no{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--sc);color:#fff;font:700 15px var(--f-d);margin-bottom:8px}
 .step b{display:block;font-family:var(--f-d);font-size:19px;line-height:1.2}
 .step span.d{display:block;color:var(--ink2);font-size:14px;margin-top:3px}
-.step:nth-child(1){--sc:var(--u1)}.step:nth-child(2){--sc:var(--u2)}.step:nth-child(3){--sc:var(--u3)}.step:nth-child(4){--sc:var(--u4)}
+.step:nth-child(1){--sc:var(--u1)}.step:nth-child(2){--sc:var(--u2)}.step:nth-child(3){--sc:var(--u3)}.step:nth-child(4){--sc:var(--u4)}.step:nth-child(5){--sc:var(--u5)}
 .prog{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .prog .big{font:800 36px var(--f-d);line-height:1}
 .badge{display:inline-block;font:700 12px var(--f-b);padding:2px 9px;border-radius:7px;color:#fff;margin-right:6px}
@@ -254,6 +254,7 @@ nav.tabs button svg{width:22px;height:22px}
 #t-phatam[aria-selected="true"]{background:#e0457b;border-color:#e0457b}
 #t-nguphap[aria-selected="true"]{background:var(--u3);border-color:var(--u3)}
 #t-luyende[aria-selected="true"]{background:var(--u4);border-color:var(--u4)}
+#t-dekt[aria-selected="true"]{background:var(--u5);border-color:var(--u5);color:#fff}
 #t-ketqua[aria-selected="true"]{background:#0b7a6e;border-color:#0b7a6e}
 nav.tabs button[aria-selected="true"]{color:#fff}
 #p-cautruc{--pc:var(--u1);--accent:var(--u1);--accent-soft:var(--u1s)}
@@ -323,7 +324,7 @@ article#g1>h3{color:var(--u1)}article#g2>h3{color:var(--u2)}article#g3>h3{color:
 .setcard .d{font-size:15px;color:var(--ink2)}
 .setcard .no{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font:700 15px var(--f-d);margin-bottom:2px}
 .setcard .pill{align-self:flex-start;margin-top:4px}
-.sc1{--sc:var(--u1)}.sc2{--sc:var(--u2)}.sc3{--sc:var(--u3)}.sc4{--sc:var(--u4)}
+.sc1{--sc:var(--u1)}.sc2{--sc:var(--u2)}.sc3{--sc:var(--u3)}.sc4{--sc:var(--u4)}.sc5{--sc:var(--u5)}
 .setcard .no{background:var(--sc)}
 .setcard[aria-pressed="true"]{border-color:var(--sc);background:color-mix(in srgb,var(--sc) 12%,var(--card))}
 .setcard:hover{border-color:var(--sc)}
@@ -344,7 +345,7 @@ html{color-scheme:light}</style>
 <div class="wrap">
 <header class="hero">
   <div class="hero-in">
-    <div class="kick">Global Success · Unit 1, 2, 3 · 2026 – 2027 · phiên bản 7</div>
+    <div class="kick">Global Success · Unit 1, 2, 3 · 2026 – 2027 · phiên bản 8</div>
     <h1>Ôn Tiếng Anh 8<br><mark>giữa học kì 1</mark></h1>
     <p>Nghe phát âm, học từ vựng, hiểu ngữ pháp từng bước, rồi làm toàn bộ đề trong đề cương. Máy chấm ngay và giảng lại từng câu.</p>
     <div class="stats"><span><b>38</b> câu</span><span><b>60</b> phút</span><span><b>3</b> Unit</span><span><b>10</b> điểm</span></div>
@@ -944,6 +945,301 @@ VOCAB.push({unit:'Từ gặp trong đề Nguyễn Hồng Ánh',title:'Từ thêm
  ['pottery','/ˈpɒtəri/','n','đồ gốm','She loves making pottery.','Cô ấy thích làm đồ gốm.'],
 ]});
 
+/* ===== MỤC "ĐỀ KIỂM TRA": 5 đề tự soạn, cùng dạng đề kiểm tra Tiếng Anh 8 (Unit 1 đến Unit 5) ===== */
+SETS.push({id:'dc5',name:'Đề kiểm tra Unit 1–5',sub:'5 đề tự soạn (mỗi Unit 1 đề, 37 câu): phát âm, trắc nghiệm, tìm lỗi, chia từ, cloze, đọc, viết',groups:[['U1','Unit 1'],['U2','Unit 2'],['U3','Unit 3'],['U4','Unit 4'],['U5','Unit 5']]});
+
+(function(){
+const plain=s=>s.replace(/<[^>]+>/g,'');
+const L='ABCD';
+function pron(n,words,ans,exp){return{q:`<b>${n}.</b> `+words.map((w,i)=>`${L[i]}. ${w}`).join(' &nbsp; '),opts:words.map(plain),ans,exp}}
+function stress(n,words,ans,exp){return{q:`<b>${n}.</b> `+words.map((w,i)=>`${L[i]}. ${w}`).join(' &nbsp; '),opts:words,ans,exp}}
+const mc=(n,q,opts,ans,exp)=>({q:`<b>${n}.</b> ${q}`,opts,ans,exp});
+const fill=(n,q,ans,exp)=>({q:`${n}. ${q}`,ans:[Array.isArray(ans)?ans:[ans]],exp});
+function add(U,tests){
+ const g='U'+U;let n=0;const nx=()=>++n;
+ const S=(id,tab,title,type,items,extra)=>SECTIONS.push(Object.assign({set:'dc5',id:`K${U}${id}`,group:g,tab,title,type,items},extra||{}));
+ S('a','I. Phát âm','I. Choose the word whose underlined part is pronounced differently, or whose stress pattern is different.','mc',tests.pron.map(p=>p[0]==='p'?pron(nx(),p[1],p[2],p[3]):stress(nx(),p[1],p[2],p[3])));
+ S('b','II. Trắc nghiệm','II. Choose the best answer A, B, C, or D.','mc',tests.mc.map(m=>mc(nx(),m[0],m[1],m[2],m[3])));
+ S('c','III. Tìm lỗi sai','III. Choose the underlined part (A, B, C, or D) that needs correcting.','mc',tests.err.map(m=>mc(nx(),m[0],m[1],m[2],m[3])));
+ S('d','IV. Chia từ / động từ','IV. Write the correct form of the word or verb in brackets.','fill',tests.fill.map(f=>fill(nx(),f[0],f[1],f[2])));
+ const c0=n;
+ const cp=tests.cloze.passage.replace(/\[(\d)\]/g,(m,k)=>`[${c0+ +k}]`);
+ S('e','V. Điền từ vào đoạn văn','V. Read the passage and choose the best word for each blank.','clozemc',tests.cloze.items.map((it,i)=>({n:c0+i+1,opts:it[0],ans:it[1],exp:it[2]})),{passage:cp});n+=tests.cloze.items.length;
+ S('f','VI. Bài đọc','VI. Read the passage and choose the best answer.','reading',tests.read.items.map(r=>({kind:'mc',q:`<b>${nx()}.</b> ${r[0]}`,opts:r[1],ans:r[2],exp:r[3]})),{passage:tests.read.passage});
+ S('g','VII. Sắp xếp từ','VII. Put the words in the correct order to make a sentence.','order',tests.order.map(o=>({q:`${nx()}.`,words:o[0],accept:o[1],model:o[1][0],exp:o[2]})));
+ S('h','VIII. Viết lại câu','VIII. Rewrite the sentences without changing the meaning, using the word in brackets.','text',tests.rw.map(r=>Object.assign({q:`${nx()}. ${r[0]}`,accept:r[2],model:r[3],exp:r[4]},r[1]?{prefix:r[1]}:{}, r[5]||{})));
+}
+
+/* ---------- UNIT 1: LEISURE TIME ---------- */
+add(1,{
+pron:[
+ ['p',['b<b class="u">oo</b>k','c<b class="u">oo</b>k','f<b class="u">oo</b>d','l<b class="u">oo</b>k'],2,'Book, cook, look đọc oo là /ʊ/ (ngắn). Food đọc /uː/ (dài) nên khác.'],
+ ['p',['play<b class="u">ed</b>','watch<b class="u">ed</b>','walk<b class="u">ed</b>','laugh<b class="u">ed</b>'],0,'Sau âm vô thanh (/tʃ/, /k/, /f/) đuôi -ed đọc /t/: watched, walked, laughed. Sau âm hữu thanh (/eɪ/) đọc /d/: played.'],
+ ['s',['leisure','hobby','enjoy','music'],2,'Leisure, hobby, music nhấn âm 1. Enjoy /ɪnˈdʒɔɪ/ nhấn âm 2.'],
+ ['s',['different','popular','favourite','exciting'],3,'Different, popular, favourite nhấn âm 1. Exciting /ɪkˈsaɪtɪŋ/ nhấn âm 2.']
+],
+mc:[
+ ['My sister is keen ____ making crafts in her free time.',['in','on','at','of'],1,'Be keen on + V-ing: rất thích làm gì.'],
+ ['We often go ____ in the mountains at the weekend.',['hike','to hike','hiking','hiked'],2,'Go + V-ing chỉ hoạt động giải trí: go hiking.'],
+ ['Linh ____ playing board games to watching TV.',['prefers','prefer','is prefer','preferring'],0,'Chủ ngữ Linh (số ít) nên dùng prefers. Cấu trúc prefer V-ing to V-ing.'],
+ ['Making origami and painting are examples of ____ activities.',['creative','dangerous','noisy','wasteful'],0,'Làm origami và vẽ tranh là hoạt động sáng tạo (creative).'],
+ ['A: "Would you like to go to the cinema with me tonight?" – B: "____"',["Yes, I'd love to.","No, I don't like.",'I go there yesterday.',"It's very expensive."],0,'Đáp lại lời mời lịch sự: Yes, I\'d love to.'],
+ ['My brother detests ____ the dishes after dinner.',['do','to do','doing','does'],2,'Detest + V-ing.'],
+ ['Many teenagers like ____ the Internet in their free time.',['surfing','surfs','surfed','to surfing'],0,'Like + V-ing: surfing the Internet.'],
+ ['She loves swimming, ____ she goes to the pool every weekend.',['but','so','or','although'],1,'Vế sau là kết quả của vế trước (thích bơi nên đi bơi): so.'],
+ ['Do you fancy ____ a film tonight?',['to watch','watching','watch','watched'],1,'Fancy + V-ing.'],
+ ['Playing sports regularly helps us stay ____.',['fit','fat','thin','lazy'],0,'Stay fit = giữ dáng, khoẻ mạnh.']
+],
+err:[
+ ['My brother <u>enjoys</u> <u>to play</u> football <u>with</u> his friends <u>after</u> school.',['enjoys','to play','with','after'],1,'Enjoy + V-ing. Sửa: to play → playing.'],
+ ['Mai <u>is</u> <u>fond for</u> <u>collecting</u> stamps <u>in</u> her free time.',['is','fond for','collecting','in'],1,'Cụm đúng: be fond of. Sửa: fond for → fond of.']
+],
+fill:[
+ ['Reading is a very ____ activity for me. (relax)','relaxing','Hoạt động mang lại cảm giác thư giãn → tính từ đuôi -ing: relaxing.'],
+ ['She is ____ in making short films. (interest)','interested','Be interested in: người cảm thấy hứng thú → interested.'],
+ ['My cousin plays the guitar very ____. (good)','well','Bổ nghĩa cho động từ plays cần trạng từ: well.'],
+ ['My parents do not mind ____ me play video games at weekends. (let)','letting','Mind + V-ing: letting.'],
+ ['Lan ____ to the library every Saturday. (go)','goes','Thói quen ở hiện tại đơn, chủ ngữ Lan (số ít): goes.'],
+ ['Last Sunday, we ____ the science museum. (visit)','visited','Last Sunday → quá khứ đơn: visited.']
+].map(f=>[f[0],f[1],f[2]]),
+cloze:{passage:'Last weekend, I [1] a great time with my friends. We [2] to the park and [3] badminton. After that, we had lunch [4] a small restaurant near the lake.',items:[
+ [['had','made','took','did'],0,'Have a great time = có khoảng thời gian tuyệt vời.'],
+ [['go','goes','went','going'],2,'Last weekend → quá khứ đơn: went.'],
+ [['play','played','plays','playing'],1,'Nối bằng and với went → cùng thì quá khứ: played.'],
+ [['on','in','of','by'],1,'In a small restaurant = trong một quán nhỏ.']]},
+read:{passage:"Minh is thirteen. He lives in Hue with his parents and his younger sister, Lan. On weekdays he has little free time because he has to do a lot of homework. At weekends, he usually plays football with his friends in the morning. In the afternoon, he likes reading comic books, but his sister prefers drawing pictures. Sometimes the family goes to the riverside for a picnic. Minh doesn't enjoy playing computer games because he thinks they waste time.",items:[
+ ['Where does Minh live?',['In Hanoi','In Hue','In Da Nang','In Hai Phong'],1,'Bài: "He lives in Hue".'],
+ ['Why does Minh have little free time on weekdays?',['He plays football.','He has to do a lot of homework.','He helps his sister.','He goes on picnics.'],1,'Bài: "he has to do a lot of homework".'],
+ ['What does Lan prefer doing?',['Reading comic books','Playing football','Drawing pictures','Playing computer games'],2,'Bài: "his sister prefers drawing pictures".'],
+ ['What does Minh think about computer games?',['They are exciting.','They waste time.','They are expensive.','They are difficult.'],1,'Bài: "he thinks they waste time".'],
+ ['What does the family sometimes do?',['Go to the cinema','Play badminton','Go for a picnic','Visit the museum'],2,'Bài: "the family goes to the riverside for a picnic".']]},
+order:[
+ [['My','mother','is','fond','of','growing','flowers','in','the','garden','.'],['My mother is fond of growing flowers in the garden.'],'Be fond of + V-ing: is fond of growing flowers; in the garden đứng cuối câu.'],
+ [['Do','you','fancy','going','to','the','cinema','with','us','?'],['Do you fancy going to the cinema with us?'],'Câu hỏi: Do you fancy + V-ing ...?']
+],
+rw:[
+ ['My sister likes drawing more than painting. (prefers)','My sister prefers',['drawing to painting'],'My sister prefers drawing to painting.','Like A more than B = prefer A to B (cả hai đều V-ing).'],
+ ['I love cooking. (keen)','I am keen',['on cooking'],'I am keen on cooking.','Love + V-ing = be keen on + V-ing.'],
+ ['He does not like washing dishes. (detests)','He detests',['washing {the |}dishes'],'He detests washing dishes.','Detest + V-ing = ghét làm gì.']
+]});
+
+/* ---------- UNIT 2: LIFE IN THE COUNTRYSIDE ---------- */
+add(2,{
+pron:[
+ ['p',['crop<b class="u">s</b>','goat<b class="u">s</b>','fruit<b class="u">s</b>','cow<b class="u">s</b>'],3,'Sau âm vô thanh (/p/, /t/) đuôi -s đọc /s/: crops, goats, fruits. Sau nguyên âm (cows) đọc /z/.'],
+ ['p',['h<b class="u">or</b>se','c<b class="u">or</b>n','n<b class="u">or</b>th','w<b class="u">or</b>k'],3,'Horse, corn, north đọc or là /ɔː/. Work /wɜːk/ đọc /ɜː/ nên khác.'],
+ ['s',['village','cattle','canal','harvest'],2,'Village, cattle, harvest nhấn âm 1. Canal /kəˈnæl/ nhấn âm 2.'],
+ ['s',['nomadic','cottage','paddy','orchard'],0,'Cottage, paddy, orchard nhấn âm 1. Nomadic /nəʊˈmædɪk/ nhấn âm 2.']
+],
+mc:[
+ ['Farmers in my village often ____ the cows in the early morning.',['milk','climb','drive','paint'],0,'Milk the cows = vắt sữa bò.'],
+ ['The air in the countryside is ____ than that in the city.',['fresh','fresher','more fresh','freshest'],1,'Tính từ ngắn so sánh hơn: fresher than.'],
+ ['My grandfather drives ____ than my father.',['more carefully','more careful','carefuller','most carefully'],0,'Trạng từ dài so sánh hơn: more carefully than.'],
+ ['A flat field where rice grows in water is called a ____ field.',['paddy','wheat','football','grass'],0,'Paddy field = ruộng lúa nước.'],
+ ['A: "What a lovely view!" – B: "____"',["Yes, it's breathtaking.","I'm sorry.","No, thanks.","Of course not."],0,'Đáp lại lời khen cảnh đẹp: Yes, it\'s breathtaking.'],
+ ['Life in the countryside is peaceful, ____ there are fewer shops.',['but','so','or','because'],0,'Hai ý đối lập: but.'],
+ ['If the weather is fine tomorrow, we ____ a picnic by the river.',['will have','have','had','would have'],0,'Câu điều kiện loại 1: If + hiện tại đơn, S + will + V.'],
+ ['Look! The farmers ____ the rice onto the cart.',['load','are loading','loaded','will loading'],1,'Look! → đang diễn ra: hiện tại tiếp diễn are loading.'],
+ ['Many young people leave the countryside because there are few job ____.',['opportunities','opportunity','opportunist','opportunely'],0,'Few + danh từ đếm được số nhiều: opportunities.'],
+ ['This village is famous ____ its handmade pottery.',['to','for','with','at'],1,'Be famous for: nổi tiếng vì.']
+],
+err:[
+ ['My brother <u>runs</u> <u>more quick</u> <u>than</u> I <u>do</u>.',['runs','more quick','than','do'],1,'Quick là trạng từ ngắn (quickly/fast). Sửa: more quick → faster (hoặc more quickly).'],
+ ['Many farmers in my village <u>are use</u> machines <u>to harvest</u> rice.',['Many','are use','to harvest','rice'],1,'Câu thiếu cấu trúc: dùng use (hiện tại đơn) hoặc are using. Sửa: are use → use / are using.']
+],
+fill:[
+ ['The ____ atmosphere of the village makes me feel calm. (peace)','peaceful','Cần tính từ đứng trước danh từ atmosphere: peaceful.'],
+ ['People in my village are very ____ to visitors. (hospitality)','hospitable','Sau are cần tính từ: hospitable (hiếu khách).'],
+ ['Farmers get up ____ than city workers. (early)','earlier','Early → earlier (y đổi thành i) + than.'],
+ ['The children ____ the chickens now. (feed)','are feeding','Now → hiện tại tiếp diễn: are feeding.'],
+ ['Farmers in my area ____ rice twice a year. (harvest)','harvest','Thói quen, chủ ngữ số nhiều: harvest.'],
+ ['If it rains, we ____ at home. (stay)','will stay','Câu điều kiện loại 1: will stay.'],
+ ['Last summer, I ____ my uncle on his farm. (help)','helped','Last summer → quá khứ đơn: helped.']
+],
+cloze:{passage:'My grandparents live in a small village. Their house is surrounded [1] green fields. They grow rice and vegetables, and raise [2] such as buffaloes and pigs. Every year, they [3] rice in October. Life there is much [4] than in the city.',items:[
+ [['by','at','on','to'],0,'Be surrounded by = được bao quanh bởi.'],
+ [['cattle','cars','computers','shops'],0,'Buffaloes and pigs là gia súc: cattle (animals).'],
+ [['harvest','paint','post','cheat'],0,'Harvest rice = thu hoạch lúa.'],
+ [['slow','slower','more slow','slowly'],1,'Much + so sánh hơn: slower than.']]},
+read:{passage:"Hoa's grandparents live in a village near the Red River. Their house has a large garden with fruit trees. Every summer, Hoa spends two weeks there. She gets up early to help her grandmother feed the chickens, and then she goes to the paddy field with her grandfather. In the afternoon, she rides a buffalo with the village children. She loves the fresh air and the quiet life, but she thinks the village has few places for entertainment. At night, the family sits in the yard and watches the stars.",items:[
+ ['Where do Hoa\'s grandparents live?',['In a city','Near the Red River','Near the sea','In the mountains'],1,'Bài: "a village near the Red River".'],
+ ['What does Hoa do early in the morning?',['Rides a buffalo','Goes shopping','Helps feed the chickens','Picks fruit'],2,'Bài: "gets up early to help her grandmother feed the chickens".'],
+ ['Who does Hoa go to the paddy field with?',['Her grandmother','Her grandfather','Her friends','Her parents'],1,'Bài: "goes to the paddy field with her grandfather".'],
+ ['What does Hoa NOT like about the village?',['The fresh air','The quiet life','The lack of entertainment places','The village children'],2,'Bài: "she thinks the village has few places for entertainment".'],
+ ['What does the family do at night?',['Watch TV','Watch the stars','Play games','Go to the market'],1,'Bài: "sits in the yard and watches the stars".']]},
+order:[
+ [['Farmers','often','use','buffaloes','to','pull','the','ploughs','.'],['Farmers often use buffaloes to pull the ploughs.'],'S + trạng từ tần suất + V + O + to V (mục đích).'],
+ [['She','is','feeding','the','chickens','in','the','yard','now','.'],['She is feeding the chickens in the yard now.','She is feeding the chickens in the yard now.'],'Hiện tại tiếp diễn: is + V-ing; địa điểm in the yard, thời gian now.']
+],
+rw:[
+ ['Life in the city is not as peaceful as life in the countryside. (more)','Life in the countryside is',['more peaceful than {life|that} in the city'],'Life in the countryside is more peaceful than life in the city.','A not as ... as B = B more ... than A.'],
+ ['My uncle works harder than my father. (as)',"My father doesn't",['work as hard as my uncle','work as hard as my uncle does'],"My father doesn't work as hard as my uncle.",'A harder than B = B not as hard as A.'],
+ ['It is a good idea to visit the countryside in autumn. (should)','We',['should visit the countryside in autumn'],'We should visit the countryside in autumn.','Dùng should + V nguyên mẫu để khuyên.']
+]});
+
+/* ---------- UNIT 3: TEENAGERS ---------- */
+add(3,{
+pron:[
+ ['p',['<b class="u">th</b>ink','<b class="u">th</b>ank','<b class="u">th</b>ough','<b class="u">th</b>ree'],2,'Think, thank, three đọc th là /θ/. Though /ðəʊ/ đọc /ð/ nên khác.'],
+ ['p',['stress<b class="u">ed</b>','relax<b class="u">ed</b>','need<b class="u">ed</b>','mix<b class="u">ed</b>'],2,'Needed (sau /d/) đọc /ɪd/. Stressed, relaxed, mixed đọc /t/.'],
+ ['s',['pressure','teenager','mature','stressful'],2,'Pressure, teenager, stressful nhấn âm 1. Mature /məˈtʃʊə/ nhấn âm 2.'],
+ ['s',['peer','stress','worry','relax'],3,'Peer, stress, worry nhấn âm 1. Relax /rɪˈlæks/ nhấn âm 2.']
+],
+mc:[
+ ['Teenagers often feel ____ to get good marks.',['pressured','pressure','pressuring','press'],0,'Feel + tính từ (cảm thấy bị áp lực): pressured.'],
+ ['She spends too much time on social ____.',['media','radio','post','club'],0,'Social media = mạng xã hội.'],
+ ['You ____ eat healthy food and do exercise to stay healthy.',['should','shouldn\'t','mustn\'t','can\'t'],0,'Lời khuyên nên làm: should.'],
+ ['Tom studies hard; ____, he always gets good marks.',['however','therefore','otherwise','although'],1,'Therefore = vì vậy (chỉ kết quả).'],
+ ['A: "Would you like to join the school club?" – B: "____"',['Sure, I\'d love to.','No, I join.','I joined it tomorrow.','It is a club.'],0,'Đáp lại lời mời: Sure, I\'d love to.'],
+ ['Phong enjoys ____ with his friends after class.',['chat','chatting','to chatting','chats'],1,'Enjoy + V-ing.'],
+ ['I can\'t go out tonight ____ I have to finish my project.',['because','although','but','or'],0,'Because chỉ lí do.'],
+ ['Don\'t be afraid ____ asking for help.',['at','of','in','on'],1,'Be afraid of + V-ing.'],
+ ['You ____ stay up late before an exam; it is bad for your concentration.',['should','shouldn\'t','must','can'],1,'Lời khuyên không nên: shouldn\'t.'],
+ ['My sister is ____ than me, so she can look after herself well.',['independent','more independent','most independent','independently'],1,'Tính từ dài so sánh hơn: more independent than.']
+],
+err:[
+ ['Teenagers <u>should</u> <u>to talk</u> to their parents <u>when</u> they <u>feel</u> stressed.',['should','to talk','when','feel'],1,'Sau should dùng V nguyên mẫu. Sửa: to talk → talk.'],
+ ['<u>Although</u> he was tired, <u>but</u> he still <u>finished</u> his <u>homework</u>.',['Although','but','finished','homework'],1,'Không dùng although và but trong cùng một câu. Bỏ but.']
+],
+fill:[
+ ['Too much homework can make students ____. (stress)','stressed','Make + O + tính từ: stressed (bị căng thẳng).'],
+ ['Sports help teens to be ____ and strong. (health)','healthy','Cần tính từ nối với strong bằng and: healthy.'],
+ ['It is important to have a good ____ with your classmates. (relate)','relationship','Sau tính từ good cần danh từ: relationship (mối quan hệ).'],
+ ['How about ____ the drama club? (join)','joining','How about + V-ing.'],
+ ['She ____ to her friend on the phone at the moment. (talk)','is talking','At the moment → hiện tại tiếp diễn: is talking.'],
+ ['If you study hard, you ____ the test. (pass)','will pass','Câu điều kiện loại 1: will pass.'],
+ ['Linh ____ her friends in the park yesterday. (meet)','met','Yesterday → quá khứ đơn; meet là động từ bất quy tắc: met.']
+],
+cloze:{passage:'Many teenagers feel [1] because of schoolwork and exams. To reduce stress, they [2] to music or do sports. It is also helpful to [3] to friends and family about your worries. Finally, you should get enough [4] every night.',items:[
+ [['stressed','happy','proud','relaxed'],0,'Vì bài vở và thi cử nên cảm thấy căng thẳng: stressed.'],
+ [['listen','look','watch','hear'],0,'Listen to music = nghe nhạc.'],
+ [['talk','say','tell','speak'],0,'Talk to somebody about something = nói chuyện với ai về điều gì.'],
+ [['sleep','food','money','homework'],0,'Get enough sleep = ngủ đủ giấc.']]},
+read:{passage:"Phong is fourteen and he is a member of the school science club. He joined it last year because he is curious about experiments. The club meets every Wednesday afternoon. At first, Phong felt nervous because he did not know anyone. However, his teammates were friendly and soon he made several close friends. He also learned to work in a team and to speak confidently. Now he feels less stressed about school because the club gives him a chance to relax and have fun.",items:[
+ ['Why did Phong join the science club?',['His friends asked him.','He is curious about experiments.','His teacher told him to.','He had free time.'],1,'Bài: "because he is curious about experiments".'],
+ ['When does the club meet?',['Every Monday','Every Wednesday afternoon','Every Friday evening','Every weekend'],1,'Bài: "meets every Wednesday afternoon".'],
+ ['How did Phong feel at first?',['Excited','Nervous','Angry','Bored'],1,'Bài: "At first, Phong felt nervous".'],
+ ['What did Phong learn in the club?',['To cook','To draw','To work in a team','To play sports'],2,'Bài: "learned to work in a team and to speak confidently".'],
+ ['Why does Phong feel less stressed now?',['He has less homework.','The club helps him relax and have fun.','He has a new teacher.','He plays games at home.'],1,'Bài: "the club gives him a chance to relax and have fun".']]},
+order:[
+ [['Teenagers','should','talk','to','their','parents','about','their','problems','.'],['Teenagers should talk to their parents about their problems.'],'S + should + V + to + O + about + problems.'],
+ [['Peer','pressure','can','be','both','good','and','bad','.'],['Peer pressure can be both good and bad.'],'Can + be + both ... and ... (vừa tốt vừa xấu).']
+],
+rw:[
+ ['It is not necessary for you to worry about the test. (need)',"You don't need",['to worry about the test'],"You don't need to worry about the test.",'It is not necessary = don\'t need to.'],
+ ['Tom was tired. He went to bed early. (so)','',['Tom was tired so he went to bed early'],'Tom was tired, so he went to bed early.','So nối hai mệnh đề (nguyên nhân – kết quả) và có dấu phẩy trước so.',{needComma:true}],
+ ['My brother is more mature than I am. (as)','I am not',['as mature as my brother {is|}'],'I am not as mature as my brother.','A more ... than B = B not as ... as A.']
+]});
+
+/* ---------- UNIT 4: ETHNIC GROUPS OF VIET NAM ---------- */
+add(4,{
+pron:[
+ ['p',['<b class="u">c</b>ostume','<b class="u">c</b>ultural','<b class="u">c</b>elebrate','<b class="u">c</b>ustom'],2,'Celebrate: c đọc /s/. Costume, cultural, custom: c đọc /k/.'],
+ ['p',['st<b class="u">i</b>lt','w<b class="u">i</b>de','h<b class="u">i</b>ll','m<b class="u">i</b>x'],1,'Stilt, hill, mix đọc i là /ɪ/. Wide /waɪd/ đọc /aɪ/ nên khác.'],
+ ['s',['festival','costume','ethnic','traditional'],3,'Festival, costume, ethnic nhấn âm 1. Traditional /trəˈdɪʃənl/ nhấn âm 2.'],
+ ['s',['culture','terrace','minority','region'],2,'Culture, terrace, region nhấn âm 1. Minority /maɪˈnɒrəti/ nhấn âm 2.']
+],
+mc:[
+ ['Many ____ people live in the northern mountainous areas of Viet Nam.',['ethnic','electric','energetic','enormous'],0,'Ethnic people = người dân tộc.'],
+ ['The Tay people often live in ____ houses built on stilts.',['stilt','brick','concrete','glass'],0,'Stilt house = nhà sàn.'],
+ ['What ____ wonderful costume the Thai woman is wearing!',['a','an','the','—'],0,'Costume là danh từ đếm được số ít, wonderful bắt đầu bằng phụ âm: a.'],
+ ['____ is the festival held? – In the first lunar month.',['Where','When','Why','Who'],1,'Trả lời về thời gian → hỏi When.'],
+ ['The H\'mong people grow rice on ____ fields on the hillsides.',['terraced','flat','square','wet'],0,'Terraced fields = ruộng bậc thang.'],
+ ['A: "Is the gong a musical instrument of the Central Highlands?" – B: "Yes, ____"',['it does','it is','they are','she is'],1,'Câu hỏi với is → trả lời Yes, it is.'],
+ ['I saw ____ elephant at the festival. ____ elephant was very big.',['an – The','a – The','the – An','an – An'],0,'Elephant bắt đầu bằng nguyên âm: an. Nhắc lại lần hai dùng the.'],
+ ['Weaving is a ____ skill of many ethnic women.',['tradition','traditional','traditionally','traditions'],1,'Trước danh từ skill cần tính từ: traditional.'],
+ ['The Cham people ____ their Kate festival every year.',['celebrate','celebrates','celebrating','celebration'],0,'Chủ ngữ số nhiều + hiện tại đơn: celebrate.'],
+ ['This region is rich ____ cultural traditions.',['at','in','on','with'],1,'Be rich in: giàu có về.']
+],
+err:[
+ ['<u>How many</u> ethnic <u>groups</u> are there <u>on</u> <u>Viet Nam</u>?',['How many','groups','on','Viet Nam'],2,'Dùng in với tên nước. Sửa: on → in.'],
+ ['He is <u>wearing</u> <u>a</u> unique <u>costumes</u> <u>of</u> the Dao people.',['wearing','a','costumes','of'],2,'A + danh từ số ít. Sửa: costumes → costume.']
+],
+fill:[
+ ['The Thai people are famous for their ____ dance. (tradition)','traditional','Trước danh từ dance cần tính từ: traditional.'],
+ ['The festival attracts many ____ every year. (visit)','visitors','Many + danh từ số nhiều chỉ người: visitors.'],
+ ['They live ____ in the mountains. (peaceful)','peacefully','Bổ nghĩa cho động từ live cần trạng từ: peacefully.'],
+ ['The villagers ____ the festival last week. (celebrate)','celebrated','Last week → quá khứ đơn: celebrated.'],
+ ['Look! The girls ____ a folk dance. (perform)','are performing','Look! → hiện tại tiếp diễn: are performing.'],
+ ['Ethnic people ____ bamboo to make baskets. (use)','use','Sự thật thường xuyên, chủ ngữ số nhiều: use.'],
+ ['We ____ the Central Highlands next month. (visit)','will visit','Next month → tương lai đơn: will visit.']
+],
+cloze:{passage:'The Ede people live in the Central Highlands. They [1] long houses of wood and bamboo. Their musical instrument, the gong, [2] famous all over the world. Every year they hold festivals to [3] thanks to the gods, and people wear colourful [4].',items:[
+ [['build','built','builds','building'],0,'They (số nhiều) + hiện tại đơn: build.'],
+ [['are','is','be','were'],1,'The gong (số ít) + is famous.'],
+ [['give','make','take','do'],0,'Give thanks to = tạ ơn.'],
+ [['costumes','costume','a costume','costuming'],0,'Colourful + danh từ số nhiều: costumes.']]},
+read:{passage:"The Tay are one of the largest ethnic groups in Viet Nam. They mainly live in the northern mountainous provinces. Many Tay families live in stilt houses made of wood and bamboo. The space under the house is used for keeping animals and storing tools. The Tay are good at growing rice on terraced fields, and their women are skilful at weaving colourful cloth. Their most important festival is the Long Tong festival, which is held in the first lunar month. During the festival, people sing folk songs, play games and pray for a good harvest.",items:[
+ ['Where do the Tay mainly live?',['In the Central Highlands','In the northern mountainous provinces','In the Mekong Delta','On the coast'],1,'Bài: "mainly live in the northern mountainous provinces".'],
+ ['What is the space under the stilt house used for?',['Cooking meals','Keeping animals and storing tools','Holding festivals','Growing rice'],1,'Bài: "used for keeping animals and storing tools".'],
+ ['What are Tay women skilful at?',['Singing','Weaving colourful cloth','Making pottery','Fishing'],1,'Bài: "skilful at weaving colourful cloth".'],
+ ['When is the Long Tong festival held?',['In the first lunar month','In the fifth lunar month','In the autumn','In the summer'],0,'Bài: "held in the first lunar month".'],
+ ['Which activity is NOT mentioned at the festival?',['Singing folk songs','Playing games','Praying for a good harvest','Doing the dragon dance'],3,'Bài chỉ nói hát dân ca, chơi trò chơi, cầu mùa; không nhắc múa rồng.']]},
+order:[
+ [['The','Tay','people','live','in','stilt','houses','.'],['The Tay people live in stilt houses.'],'S + V + in + stilt houses.'],
+ [['Which','festival','do','the','Cham','people','celebrate','?'],['Which festival do the Cham people celebrate?'],'Câu hỏi: Which + danh từ + do + S + V?']
+],
+rw:[
+ ['The festival is held in the first lunar month. (take place)','The festival',['takes place in the first lunar month'],'The festival takes place in the first lunar month.','Be held = take place; chủ ngữ số ít nên takes.'],
+ ['Mai does not weave as skilfully as her mother. (more)',"Mai's mother",['weaves more {skilfully|skillfully} than Mai {does|}'],"Mai's mother weaves more skilfully than Mai.",'A not as ... as B = B more ... than A.'],
+ ['She likes wearing traditional costumes. (fond)','She is fond',['of wearing traditional costumes'],'She is fond of wearing traditional costumes.','Like + V-ing = be fond of + V-ing.']
+]});
+
+/* ---------- UNIT 5: OUR CUSTOMS AND TRADITIONS ---------- */
+add(5,{
+pron:[
+ ['p',['custom<b class="u">s</b>','ceremonie<b class="u">s</b>','gift<b class="u">s</b>','ancestor<b class="u">s</b>'],2,'Gifts: s đọc /s/ (sau /t/). Customs, ceremonies, ancestors: s đọc /z/.'],
+ ['p',['gr<b class="u">ee</b>t','m<b class="u">ee</b>t','w<b class="u">ea</b>r','s<b class="u">ee</b>'],2,'Greet, meet, see đọc /iː/. Wear /weə/ đọc /eə/ nên khác.'],
+ ['s',['custom','wedding','ceremony','tradition'],3,'Custom, wedding, ceremony nhấn âm 1. Tradition /trəˈdɪʃn/ nhấn âm 2.'],
+ ['s',['generation','celebration','decoration','ancestor'],3,'Generation, celebration, decoration nhấn âm 3 (đuôi -ation). Ancestor nhấn âm 1.']
+],
+mc:[
+ ['You ____ be polite to the elders.',['should','shouldn\'t','mustn\'t','can\'t'],0,'Lời khuyên nên làm: should.'],
+ ['You ____ take photos in the temple. It is not allowed.',['must','mustn\'t','should','need'],1,'Cấm đoán: mustn\'t.'],
+ ['____ should I wear to the wedding?',['What','Who','Where','Why'],0,'Hỏi về đồ vật (quần áo): What.'],
+ ['In Viet Nam, people usually ____ their shoes before entering a house.',['take off','put on','take up','turn off'],0,'Take off = cởi (giày).'],
+ ['Tet is a time for family ____.',['reunion','invention','competition','pollution'],0,'Family reunion = sum họp gia đình.'],
+ ['Mid-Autumn Festival is ____ the 15th day of the eighth lunar month.',['in','on','at','by'],1,'Dùng on trước ngày: on the 15th day.'],
+ ['We ____ wear shorts at the pagoda; it is impolite.',['should','shouldn\'t','must','can'],1,'Lời khuyên không nên: shouldn\'t.'],
+ ['Children get ____ money from adults at Tet.',['lucky','unlucky','rich','poor'],0,'Lucky money = tiền lì xì.'],
+ ['A: "Should I bring a gift to the party?" – B: "____"',['Yes, you should.','Yes, you do.','No, you shouldn\'t to.','Yes, you are.'],0,'Hỏi với should → trả lời Yes, you should.'],
+ ['People clean their houses ____ the new year starts.',['before','after','when','during'],0,'Dọn nhà trước khi năm mới bắt đầu: before.']
+],
+err:[
+ ['You <u>shouldn\'t</u> <u>to talk</u> <u>loudly</u> in the <u>pagoda</u>.',['shouldn\'t','to talk','loudly','pagoda'],1,'Sau shouldn\'t dùng V nguyên mẫu. Sửa: to talk → talk.'],
+ ['<u>Everyone</u> <u>have</u> to <u>take off</u> <u>their</u> shoes here.',['Everyone','have','take off','their'],1,'Everyone là chủ ngữ số ít. Sửa: have → has.']
+],
+fill:[
+ ['Giving lucky money is a ____ custom. (tradition)','traditional','Trước danh từ custom cần tính từ: traditional.'],
+ ['Tet is the most ____ festival in Viet Nam. (importance)','important','Sau the most cần tính từ: important.'],
+ ['She ____ greeted everyone at the door. (warm)','warmly','Bổ nghĩa cho động từ greeted cần trạng từ: warmly.'],
+ ['You should not ____ black clothes at a wedding. (wear)','wear','Sau should not dùng V nguyên mẫu: wear.'],
+ ['We ____ the house before Tet last year. (clean)','cleaned','Last year → quá khứ đơn: cleaned.'],
+ ['Lan ____ banh chung with her mother now. (cook)','is cooking','Now → hiện tại tiếp diễn: is cooking.'],
+ ['If you visit Hue, you ____ many old temples. (see)','will see','Câu điều kiện loại 1: will see.']
+],
+cloze:{passage:'Tet is the biggest festival in Viet Nam. Before Tet, people [1] their houses and decorate them with flowers. On New Year\'s Eve, family members [2] together for dinner. Children [3] new clothes and get lucky money from the elders. People also [4] sweeping the floor on the first day of the new year.',items:[
+ [['clean','cleans','cleaning','cleaned'],0,'People (số nhiều) + hiện tại đơn: clean.'],
+ [['gather','gathers','gathering','gathered'],0,'Family members (số nhiều): gather together.'],
+ [['wear','wears','wearing','worn'],0,'Children (số nhiều): wear new clothes.'],
+ [['avoid','enjoy','love','fancy'],0,'Kiêng quét nhà ngày mùng 1: avoid sweeping the floor.']]},
+read:{passage:"Tet is the most important festival in Viet Nam. Before Tet, families clean and decorate their houses with peach blossoms or kumquat trees. On New Year's Eve, they gather together to have dinner and watch fireworks. On the first day of the new year, children wear new clothes and wish their grandparents a happy new year. In return, the elders give them lucky money in red envelopes. People believe that the first visitor of the year can bring good luck, so they are careful about who comes first. They also avoid sweeping the floor on that day.",items:[
+ ['What do families do before Tet?',['They travel abroad.','They clean and decorate their houses.','They sell flowers.','They visit the pagoda.'],1,'Bài: "families clean and decorate their houses".'],
+ ['What do family members do on New Year\'s Eve?',['Have dinner and watch fireworks','Visit friends','Go to school','Plant trees'],0,'Bài: "gather together to have dinner and watch fireworks".'],
+ ['What do children receive from the elders?',['New clothes','Lucky money','Flowers','Toys'],1,'Bài: "the elders give them lucky money in red envelopes".'],
+ ['What do people believe about the first visitor?',['He brings bad luck.','He can bring good luck.','He must bring a gift.','He should stay long.'],1,'Bài: "the first visitor of the year can bring good luck".'],
+ ['What do people avoid on the first day of the new year?',['Wearing red','Visiting relatives','Sweeping the floor','Having dinner'],2,'Bài: "They also avoid sweeping the floor on that day".']]},
+order:[
+ [['Children','should','respect','their','grandparents','.'],['Children should respect their grandparents.'],'S + should + V + O.'],
+ [['We','mustn\'t','make','noise','in','the','temple','.'],['We mustn\'t make noise in the temple.','We mustn\'t make a noise in the temple.'],'Cấm đoán: mustn\'t + V.']
+],
+rw:[
+ ['It is not good to make noise in the pagoda. (shouldn\'t)','You',['shouldn\'t make {a |}noise in the pagoda','should not make {a |}noise in the pagoda'],'You shouldn\'t make noise in the pagoda.','Không nên làm gì = shouldn\'t + V.'],
+ ['It is necessary to take off your shoes. (have)','You',['have to take off your shoes'],'You have to take off your shoes.','It is necessary to = have to (bắt buộc).'],
+ ['It is forbidden to take photos here. (mustn\'t)','You',['mustn\'t take photos here','must not take photos here'],'You mustn\'t take photos here.','Forbidden (bị cấm) = mustn\'t + V.']
+]});
+})();
+
 /* ===== HELPERS ===== */
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -983,12 +1279,14 @@ document.addEventListener('click',e=>{
  b.onclick=()=>{const dark=matchMedia('(prefers-color-scheme: dark)').matches;const cur=document.documentElement.dataset.theme||(dark?'dark':'light');const n=cur==='dark'?'light':'dark';document.documentElement.dataset.theme=n;try{localStorage.setItem('eng8-theme',n)}catch(e){}};
  document.querySelector('.hero').appendChild(b)})();
 /* ===== TABS / ROUTER ===== */
-const TABICON={"cautruc": "<path d=\"M3 11l9-8 9 8\"/><path d=\"M5 10v10h14V10\"/>", "tuvung": "<path d=\"M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z\"/><path d=\"M4 19V5\"/>", "phatam": "<path d=\"M11 5L6 9H3v6h3l5 4z\"/><path d=\"M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13\"/>", "nguphap": "<path d=\"M4 20h4L19 9l-4-4L4 16z\"/><path d=\"M13 7l4 4\"/>", "luyende": "<rect x=\"5\" y=\"4\" width=\"14\" height=\"17\" rx=\"2\"/><path d=\"M9 4V2.5h6V4M9 11l2 2 4-4M9 17h6\"/>", "ketqua": "<path d=\"M4 20V10M10 20V4M16 20v-7M22 20H2\"/>"};
-const TABS=[['cautruc','Trang chủ'],['tuvung','Từ vựng'],['phatam','Phát âm'],['nguphap','Ngữ pháp'],['luyende','Luyện đề'],['ketqua','Kết quả']];
+const TABICON={"cautruc": "<path d=\"M3 11l9-8 9 8\"/><path d=\"M5 10v10h14V10\"/>", "tuvung": "<path d=\"M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z\"/><path d=\"M4 19V5\"/>", "phatam": "<path d=\"M11 5L6 9H3v6h3l5 4z\"/><path d=\"M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13\"/>", "nguphap": "<path d=\"M4 20h4L19 9l-4-4L4 16z\"/><path d=\"M13 7l4 4\"/>", "luyende": "<rect x=\"5\" y=\"4\" width=\"14\" height=\"17\" rx=\"2\"/><path d=\"M9 4V2.5h6V4M9 11l2 2 4-4M9 17h6\"/>", "dekt": "<path d=\"M6 3h9l4 4v14H6z\"/><path d=\"M14 3v5h5M9 13h7M9 17h7\"/>", "ketqua": "<path d=\"M4 20V10M10 20V4M16 20v-7M22 20H2\"/>"};
+const TABS=[['cautruc','Trang chủ'],['tuvung','Từ vựng'],['phatam','Phát âm'],['nguphap','Ngữ pháp'],['luyende','Luyện đề'],['dekt','Đề kiểm tra'],['ketqua','Kết quả']];
 $('#tabs').innerHTML=TABS.map(([id,l])=>`<button role="tab" id="t-${id}" data-tab="${id}" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true">${TABICON[id]}</svg><span>${l}</span></button>`).join('');
 function show(id){
   if(!TABS.some(t=>t[0]===id)) id='cautruc';
-  TABS.forEach(([k])=>{$('#p-'+k).classList.toggle('on',k===id);$('#t-'+k).setAttribute('aria-selected',k===id)});
+  const pnl=id==='dekt'?'luyende':id;
+  TABS.forEach(([k])=>{const pk=k==='dekt'?'luyende':k;$('#p-'+pk).classList.toggle('on',pk===pnl);$('#t-'+k).setAttribute('aria-selected',k===id)});
+  if(id==='luyende'||id==='dekt'){MODE=id;if(!MODESETS[MODE].includes(PS.set))pickSet(MODESETS[MODE][0]);else syncPractice();setPracticeHead()}
   if(id==='ketqua') renderResults();
   if(id==='cautruc') renderHome();
   const tb=$('#t-'+id); tb&&tb.scrollIntoView({block:'nearest',inline:'center'});
@@ -1016,6 +1314,7 @@ $('#p-cautruc').innerHTML=`
  <button class="step" data-goset="dc2"><span class="no">2</span><b>Đề cương 2</b><span class="d">Revision: 48 câu + 2 đoạn văn</span></button>
  <button class="step" data-goset="dc3"><span class="no">3</span><b>Đề cương 3</b><span class="d">Đề số 01: 40 câu, 60 phút, 10 điểm</span></button>
  <button class="step" data-goset="dc4"><span class="no">4</span><b>Đề cương Nguyễn Hồng Ánh</b><span class="d">45 câu trắc nghiệm + đọc + viết</span></button>
+ <button class="step" data-goset="dc5"><span class="no">5</span><b>Đề kiểm tra Unit 1–5</b><span class="d">5 đề tự soạn, 37 câu mỗi đề</span></button>
 </div>
 <h2 style="margin-top:26px">Cấu trúc đề kiểm tra (Đề cương 1)</h2>
 <p class="lead">Unit 1, 2, 3 · Thời gian làm bài: 60 phút · 38 câu · 10 điểm.</p>
@@ -1060,7 +1359,7 @@ $('#p-cautruc').innerHTML=`
 function renderHome(){const st=store.get();let C=0,T=0,n=0;SECTIONS.forEach(s=>{const r=st[s.id];if(r){C+=r.c;T+=r.t;n++}});const pct=T?Math.round(C/T*100):0;
   $('#homeProg').innerHTML=n?`<div class="prog"><div class="big">${pct}%</div><div style="flex:1;min-width:200px"><b>Em đã làm ${n}/${SECTIONS.length} phần luyện đề</b><div class="bar" style="margin:6px 0"><i style="width:${pct}%"></i></div><span class="vi">Vào mục Kết quả để xem phần nào cần ôn lại.</span></div><button class="btn" data-tab="luyende">Làm tiếp</button></div>`:`<div class="prog"><div style="flex:1;min-width:200px"><b>Chào em! Bắt đầu từ bước 1 nhé.</b><div class="vi">Kết quả làm bài sẽ hiện ở đây để em theo dõi tiến độ.</div></div><button class="btn" data-tab="tuvung">Học từ vựng</button></div>`}
 renderHome();
-$('#p-cautruc').addEventListener('click',e=>{const b=e.target.closest('[data-tab]'),g=e.target.closest('[data-goset]');if(g){pickSet(g.dataset.goset);location.hash='luyende'}else if(b)location.hash=b.dataset.tab});
+$('#p-cautruc').addEventListener('click',e=>{const b=e.target.closest('[data-tab]'),g=e.target.closest('[data-goset]');if(g){const ts=g.dataset.goset==='dc5'?'dekt':'luyende';MODE=ts;pickSet(g.dataset.goset);location.hash=ts}else if(b)location.hash=b.dataset.tab});
 /* ===== PANEL 2: TỪ VỰNG ===== */
 const VS={unit:'all',q:'',mode:'list',fc:{i:0,flip:false,deck:[]},quiz:null};
 const ALLV=[];VOCAB.forEach(g=>g.items.forEach(it=>ALLV.push({w:it[0],ipa:it[1],pos:it[2],vi:it[3],ex:it[4],exvi:it[5],say:it[6]||it[0].replace(/[()]/g,' '),unit:g.unit,grp:g.title})));
@@ -1388,7 +1687,8 @@ const CONTR=[[/\bdid not\b/g,"didn't"],[/\bdoes not\b/g,"doesn't"],[/\bdo not\b/
 function norm(s){s=String(s).toLowerCase().replace(/[’‘`´]/g,"'").replace(/[.,;:!?"()]/g,' ');CONTR.forEach(([r,t])=>s=s.replace(r,t));return s.replace(/\s+/g,' ').trim()}
 function expand(t){const m=t.match(/\{([^{}]*)\}/);if(!m)return [t];const out=[];m[1].split('|').forEach(o=>expand(t.replace(m[0],o)).forEach(x=>out.push(x)));return out}
 const accSet=list=>new Set(list.flatMap(expand).map(norm));
-const letters='ABCD';
+const letters='ABCDEF';
+let MODE='luyende';const MODESETS={luyende:['dc1','dc2','dc3','dc4'],dekt:['dc5']};
 const PS={set:'dc1',group:'A',sec:'A1'};
 const secById=id=>SECTIONS.find(s=>s.id===id);
 
@@ -1512,26 +1812,32 @@ function checkSection(sec){
 }
 function mountSec(sec){
   let el=$('#s-'+sec.id);
-  if(!el){el=document.createElement('div');el.id='s-'+sec.id;el.className='sec card g'+['A','B','C','D'][SETS.find(x=>x.id===sec.set).groups.findIndex(g=>g[0]===sec.group)];$('#sections').appendChild(el)}
+  if(!el){el=document.createElement('div');el.id='s-'+sec.id;el.className='sec card g'+['A','B','C','D'][SETS.find(x=>x.id===sec.set).groups.findIndex(g=>g[0]===sec.group)%4];$('#sections').appendChild(el)}
   el.innerHTML=secHTML(sec);
   $$('.q',el).forEach(q=>{if($('.otok',q))ordRender(q)});
 }
 function ordRender(q){const seq=JSON.parse(q.dataset.seq||'[]');const bank=$$('.otok',q);bank.forEach((b,k)=>b.disabled=seq.includes(k));$('.built',q).innerHTML=seq.length?seq.map(k=>`<span class="tk">${bank[k].textContent}</span>`).join(' '):'<span class="vi">Câu của em sẽ hiện ở đây...</span>'}
 function renderPractice(){
-  $('#p-luyende').innerHTML=`<h2>Luyện đề</h2><p class="lead">Toàn bộ bài tập trong đề cương, giữ nguyên câu hỏi. Làm hết một phần rồi bấm <b>Nộp bài và chấm</b> để xem đáp án và lời giải từng câu.</p>
+  $('#p-luyende').innerHTML=`<h2 id="pHead">Luyện đề</h2><p class="lead" id="pLead">Toàn bộ bài tập trong đề cương, giữ nguyên câu hỏi. Làm hết một phần rồi bấm <b>Nộp bài và chấm</b> để xem đáp án và lời giải từng câu.</p>
   <div class="sets" id="setcards"></div>
-  <div class="timerbar row" style="justify-content:space-between;margin-bottom:12px"><div><b>Thi thử 60 phút</b><div class="vi" style="font-size:14px">Bấm bắt đầu rồi làm lần lượt các phần A, B, C, D như đề thật.</div></div><div class="row"><span id="timer" style="font:700 26px var(--f-d);min-width:84px;text-align:center">60:00</span><button class="btn sm" id="tStart">Bắt đầu</button><button class="btn ghost sm" id="tReset">Đặt lại</button></div></div>
+  <div class="timerbar row" id="timerbar" style="justify-content:space-between;margin-bottom:12px"><div><b>Thi thử 60 phút</b><div class="vi" style="font-size:14px">Bấm bắt đầu rồi làm lần lượt các phần A, B, C, D như đề thật.</div></div><div class="row"><span id="timer" style="font:700 26px var(--f-d);min-width:84px;text-align:center">60:00</span><button class="btn sm" id="tStart">Bắt đầu</button><button class="btn ghost sm" id="tReset">Đặt lại</button></div></div>
   <div class="row" id="gchips" style="margin-bottom:8px"></div><div class="sub" id="schips"></div><div id="sections"></div>`;
   SECTIONS.forEach(mountSec);
   syncPractice();
 }
 function syncPractice(){
   const S=SETS.find(x=>x.id===PS.set),st=store.get();
-  $('#setcards').innerHTML=SETS.map((s,idx)=>{const secs=SECTIONS.filter(x=>x.set===s.id);let n=0;secs.forEach(x=>{if(st[x.id])n++});
+  $('#setcards').innerHTML=SETS.map((s,idx)=>{if(!MODESETS[MODE].includes(s.id))return '';const secs=SECTIONS.filter(x=>x.set===s.id);let n=0;secs.forEach(x=>{if(st[x.id])n++});
     return `<button class="setcard sc${idx+1}" data-set="${s.id}" aria-pressed="${PS.set===s.id}"><span class="no">${idx+1}</span><b>${s.name}</b><span class="d">${s.sub}</span><span class="pill">${n}/${secs.length} phần đã làm</span></button>`}).join('');
   $('#gchips').innerHTML=S.groups.map(([k,l])=>`<button class="chip" data-g="${k}" aria-pressed="${PS.group===k}">${l}</button>`).join('');
   $('#schips').innerHTML=SECTIONS.filter(s=>s.set===PS.set&&s.group===PS.group).map(s=>{const r=st[s.id];return `<button class="chip" data-s="${s.id}" aria-pressed="${PS.sec===s.id}">${s.tab}${r?` · ${r.c%1?r.c.toFixed(1):r.c}/${r.t}`:''}</button>`}).join('');
   $$('.sec').forEach(e=>e.classList.toggle('on',e.id==='s-'+PS.sec));
+}
+function setPracticeHead(){
+  const k=MODE==='dekt';
+  $('#pHead').textContent=k?'Đề kiểm tra Tiếng Anh 8':'Luyện đề';
+  $('#pLead').innerHTML=k?'5 đề kiểm tra tự soạn theo dạng đề kiểm tra Tiếng Anh 8, mỗi Unit 1 đề (Unit 1 đến Unit 5). Làm từng phần rồi bấm <b>Nộp bài và chấm</b> để xem đáp án và giải thích.':'Toàn bộ bài tập trong đề cương, giữ nguyên câu hỏi. Làm hết một phần rồi bấm <b>Nộp bài và chấm</b> để xem đáp án và lời giải từng câu.';
+  $('#timerbar').style.display=k?'none':'';
 }
 function pickSet(id){PS.set=id;const f=SECTIONS.find(x=>x.set===id);PS.group=f.group;PS.sec=f.id;syncPractice()}
 $('#p-luyende').addEventListener('click',e=>{
@@ -1549,7 +1855,7 @@ $('#p-luyende').addEventListener('click',e=>{
   else if(st){hasTTS&&speechSynthesis.cancel()}
 });
 $('#p-luyende').addEventListener('input',e=>{const ta=e.target.closest('textarea');if(!ta)return;const w=$('.wc',ta.closest('.q'));if(w){const n=ta.value.trim()?ta.value.trim().split(/\s+/).length:0;w.textContent=n+' từ'+w.dataset.need}});
-renderPractice();
+renderPractice();setPracticeHead();
 let tLeft=3600,tInt=null;const tShow=()=>{$('#timer').textContent=String(Math.floor(tLeft/60)).padStart(2,'0')+':'+String(tLeft%60).padStart(2,'0');$('#timer').style.color=tLeft<300?'var(--bad)':''};
 $('#tStart').onclick=()=>{if(tInt){clearInterval(tInt);tInt=null;$('#tStart').textContent='Tiếp tục';return}
   $('#tStart').textContent='Tạm dừng';tInt=setInterval(()=>{tLeft--;tShow();if(tLeft<=0){clearInterval(tInt);tInt=null;toast('Hết 60 phút. Hãy nộp bài và xem kết quả.');$('#tStart').textContent='Bắt đầu'}},1000)};
