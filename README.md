@@ -7,12 +7,21 @@ Trang web ôn tập: từ vựng có loa, phát âm, 7 bài ngữ pháp, 6 bộ 
 - Đề giữa kì Code 1 và Code 2 (34 câu + đoạn văn, 10 điểm; bài nghe do trình duyệt đọc theo script của đề)
 - Từ vựng bổ sung từ sách bài tập BTTA 8 (Unit 1-3), bài phát âm đuôi -ed, /ɪ/ và /aɪ/, /ʊ/ và /uː/, ngữ pháp bài 8
 
-Toàn bộ trang nằm trong MỘT file `index.html` (không cần file nào khác).
+Trang nằm trong file `index.html`; thư mục `audio/` chứa 3 băng nghe thật (mp3) của các đề mới.
 
 ## Đưa lên GitHub Pages
-1. Tạo repository mới, tải 3 file `index.html`, `README.md`, `.nojekyll` lên (để ở thư mục gốc).
+1. Tạo repository mới, tải `index.html`, `README.md`, `.nojekyll` và thư mục `audio` lên (để ở thư mục gốc).
 2. Vào Settings > Pages > Source: chọn branch `main`, thư mục `/ (root)`, bấm Save.
 3. Chờ 1-2 phút rồi mở https://TEN-TAI-KHOAN.github.io/TEN-REPO/ (nhấn Ctrl+F5 nếu còn thấy bản cũ).
 
 Cần Internet để tải font chữ. Giọng đọc do trình duyệt (Chrome, Edge, Safari).
 - Đề cương Nguyễn Hồng Ánh: Review for Mid-term Test 1 (45 câu trắc nghiệm, đọc, viết; đáp án do web tự suy ra vì bản scan không có đáp án)
+
+## Đề mới thêm
+- Ngô Sĩ Liên mã 801 và 802 (băng nghe thật, 32 trắc nghiệm, tự luận)
+- Tân Yên (băng nghe thật, 40 câu)
+- Giảng Võ 2 (36 câu; câu nghe 37-40 chưa có băng và đáp án nên chưa đưa vào)
+- Ngô Gia Tự (40 câu)
+- Chi Lăng 2026 (băng nghe thật, điền từ, sắp xếp, viết lại câu)
+
+Đáp án đã đối chiếu: mã 801 câu 28 và mã 802 câu 32 trong bảng đáp án gốc sai (đáp án đúng là từ *village*); các câu có 2 đáp án hợp lí được chấm đúng cả hai. Đáp án phần nghe lấy theo hướng dẫn chấm.
