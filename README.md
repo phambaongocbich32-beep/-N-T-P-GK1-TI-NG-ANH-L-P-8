@@ -7,10 +7,10 @@ Trang web ôn tập: từ vựng có loa, phát âm, 7 bài ngữ pháp, 6 bộ 
 - Đề giữa kì Code 1 và Code 2 (34 câu + đoạn văn, 10 điểm; bài nghe do trình duyệt đọc theo script của đề)
 - Từ vựng bổ sung từ sách bài tập BTTA 8 (Unit 1-3), bài phát âm đuôi -ed, /ɪ/ và /aɪ/, /ʊ/ và /uː/, ngữ pháp bài 8
 
-Trang nằm trong file `index.html`; thư mục `audio/` chứa 3 băng nghe thật (mp3) của các đề mới.
+Toàn bộ trang (kể cả 3 băng nghe thật của các đề mới) nằm trong MỘT file `index.html` (~10 MB), không cần file nào khác.
 
 ## Đưa lên GitHub Pages
-1. Tạo repository mới, tải `index.html`, `README.md`, `.nojekyll` và thư mục `audio` lên (để ở thư mục gốc).
+1. Tạo repository mới, tải `index.html`, `README.md`, `.nojekyll` lên (để ở thư mục gốc).
 2. Vào Settings > Pages > Source: chọn branch `main`, thư mục `/ (root)`, bấm Save.
 3. Chờ 1-2 phút rồi mở https://TEN-TAI-KHOAN.github.io/TEN-REPO/ (nhấn Ctrl+F5 nếu còn thấy bản cũ).
 
