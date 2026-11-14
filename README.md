@@ -25,3 +25,7 @@ Cần Internet để tải font chữ. Giọng đọc do trình duyệt (Chrome,
 - Chi Lăng 2026 (băng nghe thật, điền từ, sắp xếp, viết lại câu)
 
 Đáp án đã đối chiếu: mã 801 câu 28 và mã 802 câu 32 trong bảng đáp án gốc sai (đáp án đúng là từ *village*); các câu có 2 đáp án hợp lí được chấm đúng cả hai. Đáp án phần nghe lấy theo hướng dẫn chấm.
+
+## Học theo Unit (mới)
+- Tab "Học theo Unit": Unit 1 đến Unit 12, mỗi unit có bảng từ vựng (loa giọng Anh-Mỹ), ngữ pháp và bài tập tự chấm.
+- Từ vựng và ngữ pháp lấy từ file Word Unit_x - HS. Bài tập: 10 câu từ vựng (đề ngẫu nhiên mỗi lần) + 4 câu ngữ pháp, sai thì giải thích, đúng thì khen, điểm hệ 10, lưu điểm cao nhất.
